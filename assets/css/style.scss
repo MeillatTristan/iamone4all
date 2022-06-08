@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('http://fonts.cdnfonts.com/css/painting-with-chocolate');
+
+
+$primary-color: #3E4FE4;
+$seconday-color: #FCC61F;
+
+*{
+  font-family: 'Inter', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+:root{
+  font-size: 10px;
+}
+
+strong{
+  font-weight: 600;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+h1{
+  font-size: 6rem;
+}
+
+p{
+  font-size: 1.6rem;
+}
+
+strong.one4all{
+  color: $primary-color;
+  font-family: 'Painting With Chocolate', sans-serif;
+}
+
+.btnPrimary{
+  background-color: $primary-color;
+  color: white;
+  border-radius: 15px;
+  padding: 18px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.secondaryColor{
+  color: $seconday-color;
+}
+
+header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+
+  img{
+    width: 60%;
+    height: auto;
+  }
+}
+
+.present{
+  padding: 0 50px;
+
+  .block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+    margin-top: 40px;
+
+    img{
+      width: 30%;
+    }
+
+    .containerText{
+      width: 30%;
+
+      p{
+        font-size: 1.9rem;
+        margin-bottom: 25px;
+        line-height: 35px;
+      }
+
+      .containerBtn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .vision{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    img{
+      width: 30%;
+      min-width: 300px;
+    }
+
+    .containerWidth{
+      width: 60%;
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+        
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+      }
+    }
+  }
+}
+
+.challenge{
+  padding: 100px;
+  background-image: url(../img/Slide-Nos-evenements.jpg);
+  background-size: cover;
+  position: relative;
+  margin-top: 50px;
+  color: white;
+
+  .filter{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 0;
+  }
+
+  .containerText{
+    position: relative;
+    z-index: 1;
+
+    p{
+      font-size: 3rem;
+      font-weight: 200;
+      margin-top: 20px;
+    }
+
+    .citation{
+      margin-top: 100px;
+      p{
+        font-size: 3.5rem;
+        font-weight: 700;
+      }
+
+      .secondaryColor{
+        font-size: 50px;
+      }
+    }
+  }
+}
