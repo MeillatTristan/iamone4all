@@ -45,7 +45,7 @@ h2{
   text-align: center;
   margin-bottom: 25px;
   position: relative;
-  font-size: 4rem !important;
+  font-size: 4rem;
   text-align: center;
 
   &::after{
@@ -56,6 +56,10 @@ h2{
     background-color: $primary-color;
     bottom: -6px;
     left: 0;
+  }
+
+  strong.one4all{
+    font-size: 4rem;
   }
 }
 
@@ -659,11 +663,76 @@ header{
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    margin-top: 75px;
+
+    p{
+      font-size: 2.7rem;
+      font-weight: 600;
+      width: 50%;
+      text-align: center;
+    }
 
     .random{
-      margin-top: 50px;
       width: 80%;
   
+      .owl-dot{
+        span{
+          background-color: $primary-color-50 !important;
+        }
+  
+        &:hover,
+        &.active{
+          span{
+            background-color: $primary-color !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.actualite{
+  padding: 0 50px;
+  
+  .containerCarou{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .actu{
+      width: 80%;
+
+      .owl-item{
+        padding: 25px;
+      }
+
+      .card{
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 7px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: 0.3s;
+        
+        &:hover{
+          background-color: $primary-color-50;
+          color: white;
+        }
+
+        .containerImg{
+          border-radius: 10px 10px 0 0;
+          overflow: hidden;
+        }
+
+        .containerText{
+          padding: 20px;
+
+          h3{
+            font-size: 2rem;
+            margin-bottom: 20px;
+          }
+        }
+      }
+
       .owl-dot{
         span{
           background-color: $primary-color-50 !important;

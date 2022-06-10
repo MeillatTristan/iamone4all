@@ -49,3 +49,30 @@ $('.owl-carousel.random').owlCarousel({
         }
     }
   })
+
+  $('.owl-carousel.actu').owlCarousel({
+    loop:true,
+    margin:50,
+    autoplay: true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    nav:false,
+    responsive:{
+        0:{
+            items:1,
+            dots:false
+        },
+        550:{
+            items:1,
+            dots:false
+        },
+        800:{
+          items:2,
+          dots:true
+      },
+        1200:{
+            items:3,
+            dots:true
+        }
+    }
+  })

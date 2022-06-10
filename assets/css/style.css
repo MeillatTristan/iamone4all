@@ -38,7 +38,7 @@ h2 {
   text-align: center;
   margin-bottom: 25px;
   position: relative;
-  font-size: 4rem !important;
+  font-size: 4rem;
   text-align: center;
 }
 h2::after {
@@ -49,6 +49,9 @@ h2::after {
   background-color: #3E4FE4;
   bottom: -6px;
   left: 0;
+}
+h2 strong.one4all {
+  font-size: 4rem;
 }
 
 p {
@@ -572,15 +575,64 @@ header img {
   flex-direction: column;
   align-items: center;
   gap: 30px;
+  margin-top: 75px;
+}
+.reseau .containerCarou p {
+  font-size: 2.7rem;
+  font-weight: 600;
+  width: 50%;
+  text-align: center;
 }
 .reseau .containerCarou .random {
-  margin-top: 50px;
   width: 80%;
 }
 .reseau .containerCarou .random .owl-dot span {
   background-color: rgba(62, 79, 228, 0.662745098) !important;
 }
 .reseau .containerCarou .random .owl-dot:hover span, .reseau .containerCarou .random .owl-dot.active span {
+  background-color: #3E4FE4 !important;
+}
+
+.actualite {
+  padding: 0 50px;
+}
+.actualite .containerCarou {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.actualite .containerCarou .actu {
+  width: 80%;
+}
+.actualite .containerCarou .actu .owl-item {
+  padding: 25px;
+}
+.actualite .containerCarou .actu .card {
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 7px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: 0.3s;
+}
+.actualite .containerCarou .actu .card:hover {
+  background-color: rgba(62, 79, 228, 0.662745098);
+  color: white;
+}
+.actualite .containerCarou .actu .card .containerImg {
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+.actualite .containerCarou .actu .card .containerText {
+  padding: 20px;
+}
+.actualite .containerCarou .actu .card .containerText h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.actualite .containerCarou .actu .owl-dot span {
+  background-color: rgba(62, 79, 228, 0.662745098) !important;
+}
+.actualite .containerCarou .actu .owl-dot:hover span, .actualite .containerCarou .actu .owl-dot.active span {
   background-color: #3E4FE4 !important;
 }
 
