@@ -3,6 +3,7 @@
 
 
 $primary-color: #3E4FE4;
+$primary-color-10: #3e4fe4a9;
 $seconday-color: #FCC61F;
 
 *{
@@ -97,17 +98,50 @@ header{
   }
 
   .vision{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template: 1fr 3fr 1fr / 2fr repeat(5, 1fr);
 
-    img{
-      width: 30%;
+    img.logo{
+      grid-area: 1 / 3 / 1 / 4;
       min-width: 300px;
     }
 
+    .giro{
+      grid-area: 2 / 1 / 3 / 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .containerImg{
+        width: 100%;
+        height: 70%;
+        display: flex;
+        justify-content: center;
+
+        img{
+          height: 100%;
+          width: auto;
+        }
+      }
+
+      p{
+        height: 20%;
+        text-align: center;
+        font-weight: 600;
+        font-size: 1.7rem;
+      }
+
+    }
+    
+    .containerButton{
+      grid-area: 3 / 3 / 4 / 4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     .containerWidth{
-      width: 60%;
+      grid-area: 2 / 3 / 3 / 6;
       .video-container {
         position: relative;
         padding-bottom: 56.25%; /* 16:9 */
@@ -126,43 +160,224 @@ header{
 }
 
 .challenge{
-  padding: 100px;
-  background-image: url(../img/Slide-Nos-evenements.jpg);
-  background-size: cover;
-  position: relative;
-  margin-top: 50px;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    width: max-content;
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
 
-  .filter{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 0;
+    &::after{
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      background-color: $primary-color;
+      bottom: -6px;
+      left: 0;
+    }
   }
 
-  .containerText{
-    position: relative;
-    z-index: 1;
+  p{
+    width: 40%;
+    text-align: center;
+  }
+}
 
-    p{
+.ctaOne{
+  margin-top: 75px;
+  .band{
+    background-color: $seconday-color;
+    color: white;
+    margin: 0 50px;
+    padding: 75px 100px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-around;
+
+    h3{
       font-size: 3rem;
-      font-weight: 200;
-      margin-top: 20px;
+      line-height: 50px;
     }
 
-    .citation{
-      margin-top: 100px;
+    .containerText{
+      width: 60%;
+    }
+
+    .containerBtn{
+      width: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .btnPrimary{
+      font-size: 2rem;
+      padding: 20px 30px;
+    }
+  }
+}
+
+.objectif{
+  margin-top: 100px;
+
+  .containerTitle{
+    display: flex;
+    justify-content: center;
+
+    h2{
+      width: max-content;
+      text-align: center;
+      margin-bottom: 25px;
+      position: relative;
+      font-size: 4rem;
+      text-align: center;
+  
+      &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 5px;
+        background-color: $primary-color;
+        bottom: -6px;
+        left: 0;
+      }
+    }
+  }
+
+  .containerMain{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+
+    .containerText{
+      width: 40%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
       p{
-        font-size: 3.5rem;
-        font-weight: 700;
-      }
-
-      .secondaryColor{
-        font-size: 50px;
+        font-size: 35px;
+        text-align: center;
+        font-weight: 600;
       }
     }
+
+    .containerCta{
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+
+      .band{
+        height: 250px;
+        width: 100%;
+        color: white;
+        background-color: $seconday-color;
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p{
+          font-size: 60px;
+          font-weight: 700;
+        }
+      }
+
+      .containerBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}
+
+.hero{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .containerImg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    img{
+      width: 40%;
+      height: auto;
+    }
+  }
+
+  .containerFirstBlock{
+    display: flex;
+    justify-content: space-around;
+    
+    .containerWidth{
+      width: 40%;
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+        
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+      }
+    }
+
+    .containerText{
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+
+      .containerBtn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      p{
+        font-size: 2.8rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .vip{
+    margin-top: 50px;
+    width: 80%;
+
+    .owl-dot{
+      span{
+        background-color: $primary-color-10 !important;
+      }
+
+      &:hover,
+      &.active{
+        span{
+          background-color: $primary-color !important;
+        }
+      }
+    }
+  }
+
+  .containerBtn{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
   }
 }

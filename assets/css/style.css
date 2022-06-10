@@ -86,16 +86,43 @@ header img {
   justify-content: center;
 }
 .present .vision {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template: 1fr 3fr 1fr/2fr repeat(5, 1fr);
 }
-.present .vision img {
-  width: 30%;
+.present .vision img.logo {
+  grid-area: 1/3/1/4;
   min-width: 300px;
 }
+.present .vision .giro {
+  grid-area: 2/1/3/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.present .vision .giro .containerImg {
+  width: 100%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+}
+.present .vision .giro .containerImg img {
+  height: 100%;
+  width: auto;
+}
+.present .vision .giro p {
+  height: 20%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+.present .vision .containerButton {
+  grid-area: 3/3/4/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .present .vision .containerWidth {
-  width: 60%;
+  grid-area: 2/3/3/6;
 }
 .present .vision .containerWidth .video-container {
   position: relative;
@@ -112,40 +139,194 @@ header img {
 }
 
 .challenge {
-  padding: 100px;
-  background-image: url(../img/Slide-Nos-evenements.jpg);
-  background-size: cover;
-  position: relative;
-  margin-top: 50px;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.challenge .filter {
+.challenge h1 {
+  width: max-content;
+  text-align: center;
+  margin-bottom: 25px;
+  position: relative;
+}
+.challenge h1::after {
+  content: "";
   position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
+  width: 100%;
+  height: 5px;
+  background-color: #3E4FE4;
+  bottom: -6px;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 0;
 }
-.challenge .containerText {
-  position: relative;
-  z-index: 1;
+.challenge p {
+  width: 40%;
+  text-align: center;
 }
-.challenge .containerText p {
+
+.ctaOne {
+  margin-top: 75px;
+}
+.ctaOne .band {
+  background-color: #FCC61F;
+  color: white;
+  margin: 0 50px;
+  padding: 75px 100px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+.ctaOne .band h3 {
   font-size: 3rem;
-  font-weight: 200;
-  margin-top: 20px;
+  line-height: 50px;
 }
-.challenge .containerText .citation {
+.ctaOne .band .containerText {
+  width: 60%;
+}
+.ctaOne .band .containerBtn {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ctaOne .band .btnPrimary {
+  font-size: 2rem;
+  padding: 20px 30px;
+}
+
+.objectif {
   margin-top: 100px;
 }
-.challenge .containerText .citation p {
-  font-size: 3.5rem;
+.objectif .containerTitle {
+  display: flex;
+  justify-content: center;
+}
+.objectif .containerTitle h2 {
+  width: max-content;
+  text-align: center;
+  margin-bottom: 25px;
+  position: relative;
+  font-size: 4rem;
+  text-align: center;
+}
+.objectif .containerTitle h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #3E4FE4;
+  bottom: -6px;
+  left: 0;
+}
+.objectif .containerMain {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.objectif .containerMain .containerText {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.objectif .containerMain .containerText p {
+  font-size: 35px;
+  text-align: center;
+  font-weight: 600;
+}
+.objectif .containerMain .containerCta {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.objectif .containerMain .containerCta .band {
+  height: 250px;
+  width: 100%;
+  color: white;
+  background-color: #FCC61F;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.objectif .containerMain .containerCta .band p {
+  font-size: 60px;
   font-weight: 700;
 }
-.challenge .containerText .citation .secondaryColor {
-  font-size: 50px;
+.objectif .containerMain .containerCta .containerBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .containerImg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.hero .containerImg img {
+  width: 40%;
+  height: auto;
+}
+.hero .containerFirstBlock {
+  display: flex;
+  justify-content: space-around;
+}
+.hero .containerFirstBlock .containerWidth {
+  width: 40%;
+}
+.hero .containerFirstBlock .containerWidth .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  height: 0;
+}
+.hero .containerFirstBlock .containerWidth .video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero .containerFirstBlock .containerText {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+}
+.hero .containerFirstBlock .containerText .containerBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.hero .containerFirstBlock .containerText p {
+  font-size: 2.8rem;
+  text-align: center;
+}
+.hero .vip {
+  margin-top: 50px;
+  width: 80%;
+}
+.hero .vip .owl-dot span {
+  background-color: rgba(62, 79, 228, 0.662745098) !important;
+}
+.hero .vip .owl-dot:hover span, .hero .vip .owl-dot.active span {
+  background-color: #3E4FE4 !important;
+}
+.hero .containerBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
