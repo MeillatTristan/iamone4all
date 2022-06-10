@@ -15,6 +15,7 @@
 
 strong {
   font-weight: 600;
+  font-size: 2rem;
 }
 
 img {
@@ -24,6 +25,30 @@ img {
 
 h1 {
   font-size: 6rem;
+}
+
+.containerTitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  width: max-content;
+  text-align: center;
+  margin-bottom: 25px;
+  position: relative;
+  font-size: 4rem;
+  text-align: center;
+}
+h2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background-color: #3E4FE4;
+  bottom: -6px;
+  left: 0;
 }
 
 p {
@@ -42,6 +67,13 @@ strong.one4all {
   padding: 18px;
   font-size: 1.8rem;
   text-transform: uppercase;
+  border: solid 4px #3E4FE4;
+  transition: 0.3s;
+}
+
+.btnPrimary:hover {
+  background-color: white;
+  color: #3E4FE4;
 }
 
 .secondaryColor {
@@ -327,6 +359,229 @@ header img {
   display: flex;
   justify-content: center;
   margin-top: 25px;
+}
+
+.participe {
+  margin-top: 100px;
+}
+.participe .etape {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  align-items: center;
+  margin-top: 50px;
+}
+.participe .etape .containerImg {
+  width: 30%;
+  text-align: center;
+}
+.participe .etape .containerImg img {
+  width: 50%;
+  height: auto;
+}
+.participe .etape .card {
+  width: 30%;
+  padding: 50px 50px 50px 75px;
+  background-color: #e0e3ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  border-radius: 5px;
+}
+.participe .etape .card p {
+  line-height: 1.7;
+  font-size: 1.8rem;
+}
+.participe .containerBand {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.participe .containerBand .band {
+  width: 60%;
+  background-color: #3E4FE4;
+  border-radius: 30px;
+  padding: 50px;
+}
+.participe .containerBand .band p {
+  margin-top: 15px;
+  font-size: 1.8rem;
+  color: white;
+}
+.participe .containerBand .band p strong {
+  color: #FCC61F;
+  font-size: 2rem;
+}
+
+.ctaBand {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+.ctaBand .band {
+  width: 90%;
+  border-radius: 20px;
+  background-color: #FCC61F;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px;
+}
+.ctaBand .band h3 {
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+}
+.ctaBand .band .containerCta {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.ctaBand .band .containerCta .cta {
+  width: 30%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+}
+.ctaBand .band .containerCta .cta img {
+  width: 80%;
+  height: auto;
+}
+.ctaBand .band .containerCta .cta img.second {
+  width: 35%;
+}
+.ctaBand .band .containerCta .cta .btnPrimary {
+  margin-top: 25px;
+}
+
+/* reseau */
+.reseau {
+  margin-top: 50px;
+  background-color: #fcfcfc;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.reseau .containerTitle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.reseau .containerTitle .title {
+  height: 150px;
+  width: auto;
+}
+.reseau .container {
+  display: flex;
+  justify-content: space-around;
+}
+.reseau .container .containerText {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.reseau .container .containerText h2 {
+  color: black;
+  margin-bottom: 50px;
+  font-size: 2.8rem;
+}
+.reseau .container .containerText p {
+  text-align: center;
+}
+.reseau .container .containerCards {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.reseau .container .containerCards img {
+  height: 500px;
+  width: auto;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.reseau .container .socialMedia {
+  width: 100%;
+  background-color: #3E4FE4;
+  display: flex;
+  border-radius: 20px;
+  box-shadow: rgba(155, 155, 155, 0.4) 5px 5px;
+  padding: 40px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  transition: 0.5s;
+}
+.reseau .container .socialMedia:hover {
+  box-shadow: rgba(71, 71, 71, 0.4) 7px 7px;
+}
+.reseau .container .socialMedia .text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.reseau .container .socialMedia .text p {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+}
+.reseau .container .socialMedia .logo {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+  margin-left: 20px;
+}
+.reseau .container .socialMedia .logo a {
+  width: 55px;
+  height: 55px;
+  background-color: #1d3452;
+  text-align: center;
+  border-radius: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.reseau .container .socialMedia .logo a i {
+  font-size: 3rem;
+  color: white;
+  transition: 0.4s;
+}
+.reseau .container .socialMedia .logo a:hover {
+  color: #6a55ea;
+  background-color: white;
+  transition: 0.4s;
+}
+.reseau .container .socialMedia .logo a:hover i {
+  color: #3E4FE4;
+}
+.reseau .containerCarou {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.reseau .containerCarou .random {
+  margin-top: 50px;
+  width: 80%;
+}
+.reseau .containerCarou .random .owl-dot span {
+  background-color: rgba(62, 79, 228, 0.662745098) !important;
+}
+.reseau .containerCarou .random .owl-dot:hover span, .reseau .containerCarou .random .owl-dot.active span {
+  background-color: #3E4FE4 !important;
 }
 
 /*# sourceMappingURL=style.css.map */
