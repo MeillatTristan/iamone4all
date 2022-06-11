@@ -60,17 +60,19 @@ $('.owl-carousel.random').owlCarousel({
     responsive:{
         0:{
             items:1,
-            dots:false
+            dots:false,
+            margin: 0
         },
         550:{
             items:1,
-            dots:false
+            dots:false,
+            margin: 0
         },
         800:{
           items:2,
           dots:true
       },
-        1200:{
+        1300:{
             items:3,
             dots:true
         }
