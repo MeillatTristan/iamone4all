@@ -309,6 +309,8 @@ header img {
 
 .objectif {
   margin-top: 100px;
+  background-color: #f0f1ff;
+  padding: 50px 0;
 }
 .objectif .containerTitle {
   display: flex;
@@ -402,6 +404,7 @@ header img {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 25px;
 }
 
 .hero {
@@ -498,6 +501,8 @@ header img {
 
 .participe {
   margin-top: 100px;
+  background-color: #fff8e6;
+  padding: 50px 0;
 }
 @media screen and (max-width: 1250px) {
   .participe h2 {
@@ -518,6 +523,71 @@ header img {
   .participe .etape {
     flex-direction: column;
   }
+}
+.participe .etape:nth-child(1) .card::after {
+  content: "1";
+  position: absolute;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #3E4FE4;
+  top: 15px;
+  left: 15px;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.participe .etape:nth-child(2) .card {
+  background-color: #d4ebf5 !important;
+}
+.participe .etape:nth-child(2) .card::after {
+  content: "2";
+  position: absolute;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #3E4FE4;
+  top: 15px;
+  left: 15px;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.participe .etape:nth-child(4) .card {
+  background-color: #b0d4ee !important;
+}
+.participe .etape:nth-child(4) .card::after {
+  content: "3";
+  position: absolute;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #3E4FE4;
+  top: 15px;
+  left: 15px;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.participe .etape:nth-child(5) .card {
+  background-color: #b0d4ee !important;
+}
+.participe .etape:nth-child(5) .card::after {
+  content: "4";
+  position: absolute;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background-color: #3E4FE4;
+  top: 15px;
+  left: 15px;
+  color: white;
+  font-size: 2.5rem;
+  text-align: center;
 }
 .participe .etape .containerImg {
   width: 30%;
@@ -542,6 +612,7 @@ header img {
   align-items: center;
   gap: 25px;
   border-radius: 5px;
+  position: relative;
 }
 @media screen and (max-width: 1200px) {
   .participe .etape .card {
@@ -640,11 +711,11 @@ header img {
 /* reseau */
 .reseau {
   margin-top: 50px;
-  background-color: #fcfcfc;
+  background-color: #e9eef5;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 50px;
+  padding: 50px 0;
 }
 .reseau .containerTitle {
   display: flex;
@@ -882,6 +953,79 @@ header img {
 }
 .actualite .containerCarou .actu .owl-dot:hover span, .actualite .containerCarou .actu .owl-dot.active span {
   background-color: #3E4FE4 !important;
+}
+
+/* events */
+.events {
+  position: relative;
+  min-height: 80vh;
+  margin-top: 100px;
+}
+.events .containerText {
+  padding: 100px 0 0 100px;
+  width: 70%;
+  min-height: 80vh;
+  position: relative;
+  background: linear-gradient(to right bottom, #b6aaff 0%, #d3cbfd 10%, #eeeeee 100%);
+}
+.events .containerText span {
+  color: #6a55ea;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.events .containerText h2 {
+  font-size: 70px;
+  color: black;
+  width: 80%;
+  text-align: left;
+}
+.events .containerText h2::after {
+  display: none;
+}
+.events .containerText .containerIllustration2 {
+  width: 60%;
+  margin-top: 50px;
+  z-index: 2;
+  position: relative;
+}
+.events .containerText .containerIllustration2 img {
+  width: 100%;
+  height: auto;
+}
+.events .containerText .shape {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  width: auto;
+}
+.events .containerText .containerButton {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: max-content;
+}
+.events .containerIllustration {
+  width: 35%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.events .containerIllustration img {
+  height: 70vh;
+  width: auto;
+}
+.events .containerButton {
+  justify-content: flex-start;
+}
+
+footer {
+  background-color: #192136;
+  color: white;
+  padding: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

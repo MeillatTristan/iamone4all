@@ -325,6 +325,8 @@ header{
 
 .objectif{
   margin-top: 100px;
+  background-color: #f0f1ff;
+  padding: 50px 0;
 
   .containerTitle{
     display: flex;
@@ -420,6 +422,7 @@ header{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 25px;
       }
     }
   }
@@ -532,6 +535,8 @@ header{
 
 .participe{
   margin-top: 100px;
+  background-color: #fff8e6;
+  padding: 50px 0;
 
   @media screen and (max-width: 1250px) {
     h2{
@@ -543,16 +548,90 @@ header{
       }
     } 
   }
-
+  
   .etape{
     display: flex;
     justify-content: center;
     gap: 5%;
     align-items: center;
     margin-top: 50px;
-
+    
     @media screen and (max-width: 1200px) {
       flex-direction: column;
+    }
+
+    &:nth-child(1) .card{
+      &::after{
+        content:"1";
+        position: absolute;
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: $primary-color;
+        top: 15px;
+        left: 15px;
+        color: white;
+        font-size: 2.5rem;
+        text-align: center;
+      }
+    }
+    
+    &:nth-child(2) .card{
+      background-color: #d4ebf5 !important;
+
+      &::after{
+        content:"2";
+        position: absolute;
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: $primary-color;
+        top: 15px;
+        left: 15px;
+        color: white;
+        font-size: 2.5rem;
+        text-align: center;
+      }
+    }
+
+    &:nth-child(4) .card{
+      background-color: #b0d4ee !important;
+
+      &::after{
+        content:"3";
+        position: absolute;
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: $primary-color;
+        top: 15px;
+        left: 15px;
+        color: white;
+        font-size: 2.5rem;
+        text-align: center;
+      }
+    }
+
+    &:nth-child(5) .card{
+      background-color: #b0d4ee !important;
+
+      &::after{
+        content:"4";
+        position: absolute;
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: $primary-color;
+        top: 15px;
+        left: 15px;
+        color: white;
+        font-size: 2.5rem;
+        text-align: center;
+      }
     }
   
     .containerImg{
@@ -579,6 +658,7 @@ header{
       align-items: center;
       gap: 25px;
       border-radius: 5px;
+      position: relative;
 
       @media screen and (max-width: 1200px) {
         width: 90%;
@@ -687,11 +767,11 @@ header{
 
 .reseau{
   margin-top: 50px;
-  background-color: #fcfcfc;
+  background-color: #e9eef5;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 50px;
+  padding: 50px 0;
 
   .containerTitle{
     display: flex;
@@ -963,3 +1043,88 @@ header{
   }
 }
 
+/* events */
+
+.events{
+  position: relative;
+  min-height: 80vh;
+  margin-top: 100px;
+
+  .containerText{
+    padding: 100px 0 0 100px;
+    width: 70%;
+    min-height: 80vh;
+    position: relative;
+    background: linear-gradient(to right bottom, #b6aaff 0%,#d3cbfd 10%, #eeeeee 100%);
+
+    span{
+      color: #6a55ea;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 1.6rem;
+    }
+
+    h2{
+      font-size: 70px;
+      color: black;
+      width: 80%;
+      text-align: left;
+
+      &::after{
+        display: none;
+      }
+    }
+
+    .containerIllustration2{
+      width: 60%;
+      margin-top: 50px;
+      z-index: 2;
+      position: relative;
+
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .shape{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 0;
+      width: auto;
+    }
+
+    .containerButton{
+      padding-top: 50px;
+      padding-bottom: 50px;
+      height: max-content;
+    }
+  }
+
+  .containerIllustration{
+    width: 35%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    img{
+      height: 70vh;
+      width: auto;
+    }
+  }
+
+  .containerButton{
+    justify-content: flex-start;
+  }
+}
+
+footer{
+  background-color: #192136;
+  color: white;
+  padding: 50px;
+
+}
