@@ -768,6 +768,7 @@ header img {
 .participe .etape .card p {
   line-height: 1.7;
   font-size: 1.8rem;
+  margin-bottom: 30px;
 }
 .participe .containerBand {
   width: 100%;
