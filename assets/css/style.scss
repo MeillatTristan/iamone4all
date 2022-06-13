@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('http://fonts.cdnfonts.com/css/painting-with-chocolate');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 $primary-color: #3E4FE4;
@@ -8,7 +9,7 @@ $primary-color-10: #e0e3ff;
 $seconday-color: #FCC61F;
 
 *{
-  font-family: 'Inter', sans-serif;
+  font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -135,12 +136,30 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10%;
+    gap: 15%;
     margin-top: 40px;
 
     @media screen and (max-width: 992px) {
       flex-direction: column;
       margin-top: 75px;
+    }
+
+    &:nth-child(2){
+      background-color: $primary-color;
+      color: white;
+      padding: 20px;
+      border-radius: 20px;
+
+      .btnPrimary{
+        background-color: white;
+        color: $primary-color;
+
+        &:hover{
+          background-color: $primary-color;
+          color: white;
+          border-color: white;
+        }
+      }
     }
 
     img{
@@ -339,6 +358,100 @@ header{
   background-color: #f0f1ff;
   padding: 50px 0;
 
+  .socialMedia{
+    width: 100%;
+    background-color: $primary-color;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: rgba(155, 155, 155, 0.4) 5px 5px;
+    padding: 40px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+    transition: 0.5s;
+
+    @media screen and (max-width: 550px) {
+      flex-direction: column;
+      align-items: center; 
+    }
+
+    &:hover{
+      box-shadow: rgba(71, 71, 71, 0.4) 7px 7px;
+    }
+
+    .text{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      @media screen and (max-width: 550px) {
+        width: 90%;
+      }
+
+      p{
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 700;
+
+        @media screen and (max-width: 750px) {
+          font-size: 2rem; 
+        }
+
+        @media screen and (max-width: 550px) {
+          font-size: 2.5rem;
+          text-align: left;
+        }
+
+      }
+    }
+    .logo{
+      display: flex;
+      justify-content: space-around;
+      width: 30%;
+      margin-left: 20px;
+
+      @media screen and (max-width: 750px) {
+        width: 50%; 
+      }
+
+      @media screen and (max-width: 550px) {
+        width: 90%;
+        margin: 0;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+
+      a{
+        width: 55px;
+        height: 55px;
+        background-color: #1d3452;
+        text-align: center;
+        border-radius: 100%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i{
+          font-size: 3rem;
+          color: white;
+          transition: 0.4s;
+
+        }
+        
+        &:hover{
+          color: #6a55ea;
+          background-color: white;
+          transition: 0.4s;
+
+          i{
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+
   .containerTitle{
     display: flex;
     justify-content: center;
@@ -381,15 +494,21 @@ header{
     .containerText{
       width: 40%;
       display: flex;
-      justify-content: center;
       align-items: center;
+      flex-direction: column;
+
 
       @media screen and (max-width: 800px) {
         width: 90%;
       }
 
-      p{
+      h3{
         font-size: 3.5rem;
+        margin-bottom: 35px;
+      }
+
+      p{
+        font-size: 2rem;
         text-align: center;
         font-weight: 600;
       }
@@ -570,7 +689,7 @@ header{
   .etape{
     display: flex;
     justify-content: center;
-    gap: 5%;
+    gap: 15%;
     align-items: center;
     margin-top: 50px;
     
@@ -672,7 +791,7 @@ header{
     }
   
     .containerImg{
-      width: 30%;
+      width: 40%;
       text-align: center;
 
       @media screen and (max-width: 1200px) {
@@ -984,11 +1103,10 @@ header{
     gap: 30px;
     margin-top: 75px;
 
-    p{
-      font-size: 2.7rem;
-      font-weight: 600;
-      width: 50%;
-      text-align: center;
+    h2{
+      margin-bottom: 50px;
+      font-size: 2.8rem;
+      text-align: left;
 
       @media screen and (max-width: 650px) {
         width: 80%; 
