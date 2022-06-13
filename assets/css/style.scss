@@ -643,6 +643,24 @@ header{
         font-size: 2.5rem;
         text-align: center;
       }
+
+      &:nth-child(6) .card{
+        background-color: #b0d4ee !important;
+  
+        &::after{
+          content:"5";
+          position: absolute;
+          padding: 10px;
+          width: 30px;
+          height: 30px;
+          border-radius: 100%;
+          background-color: $primary-color;
+          top: 15px;
+          left: 15px;
+          color: white;
+          font-size: 2.5rem;
+          text-align: center;
+        }
     }
   
     .containerImg{
