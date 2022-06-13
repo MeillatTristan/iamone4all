@@ -607,10 +607,10 @@ header img {
   font-size: 2.5rem;
   text-align: center;
 }
-.participe .etape:nth-child(5) .card:nth-child(6) .card {
+.participe .etape:nth-child(6) .card {
   background-color: #b0d4ee !important;
 }
-.participe .etape:nth-child(5) .card:nth-child(6) .card::after {
+.participe .etape:nth-child(6) .card::after {
   content: "5";
   position: absolute;
   padding: 10px;
