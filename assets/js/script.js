@@ -79,6 +79,17 @@ $('.owl-carousel.random').owlCarousel({
     }
   })
 
+  $('.owl-carousel.header').owlCarousel({
+    loop:true,
+    margin:50,
+    autoplay: true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    nav:false,
+    dots: false,
+    items: 1
+  })
+
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
     for (var i = 0; i < reveals.length; i++) {

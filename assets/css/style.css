@@ -147,6 +147,10 @@ header nav a:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+header .owl-carousel.header {
+  width: 100%;
+  padding: 0 50px 50px 50px;
+}
 
 .present {
   padding: 0 50px;
