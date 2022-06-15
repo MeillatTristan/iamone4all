@@ -846,7 +846,7 @@ header{
     }
   
     .containerImg{
-      width: 40%;
+      width: 25%;
       text-align: center;
 
       @media screen and (max-width: 1200px) {
@@ -857,6 +857,10 @@ header{
       img{
         width: 50%;
         height: auto;
+
+        &.download{
+          width: 90%;
+        }
       }
     }
   

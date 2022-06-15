@@ -784,7 +784,7 @@ header .owl-carousel.header {
   text-align: center;
 }
 .participe .etape .containerImg {
-  width: 40%;
+  width: 25%;
   text-align: center;
 }
 @media screen and (max-width: 1200px) {
@@ -796,6 +796,9 @@ header .owl-carousel.header {
 .participe .etape .containerImg img {
   width: 50%;
   height: auto;
+}
+.participe .etape .containerImg img.download {
+  width: 90%;
 }
 .participe .etape .card {
   width: 30%;
