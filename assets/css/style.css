@@ -109,13 +109,43 @@ strong.one4all {
 header {
   width: 100%;
   display: flex;
-  justify-content: center;
+  align-items: center;
   padding: 50px 0;
+  flex-direction: column;
 }
 header img {
   width: 60%;
   height: auto;
   min-width: 300px;
+}
+header nav {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  padding: 0 50px;
+  margin-bottom: 50px;
+}
+header nav a {
+  font-size: 1.8rem;
+  color: #192136;
+  font-weight: 600;
+  position: relative;
+}
+header nav a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: -5px;
+  left: 0;
+  background-color: #3E4FE4;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+header nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .present {
@@ -218,6 +248,7 @@ header img {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding: 20px;
 }
 @media screen and (max-width: 992px) {
   .present .vision .giro {
@@ -254,7 +285,7 @@ header img {
   }
 }
 .present .vision .containerWidth {
-  grid-area: 2/3/3/6;
+  grid-area: 2/2/3/5;
 }
 @media screen and (max-width: 992px) {
   .present .vision .containerWidth {
@@ -534,6 +565,9 @@ header img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: url(../img/backgroundVision.jpg);
+  background-size: cover;
+  padding-bottom: 30px;
 }
 .hero .containerImg {
   width: 100%;
@@ -602,8 +636,13 @@ header img {
   justify-content: center;
 }
 .hero .containerFirstBlock .containerText p {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   text-align: center;
+  background-color: rgba(25, 33, 54, 0.431372549);
+  padding: 30px;
+  border-radius: 5px;
+  color: white;
+  line-height: 1.6;
 }
 .hero .vip {
   margin-top: 50px;
@@ -619,6 +658,11 @@ header img {
   display: flex;
   justify-content: center;
   margin-top: 25px;
+}
+.hero h2 {
+  margin-top: 75px;
+  font-size: 2.8rem;
+  text-align: left;
 }
 
 .participe {
@@ -636,7 +680,7 @@ header img {
 }
 .participe h3 {
   font-size: 3rem;
-  color: white;
+  color: #FCC61F;
   text-align: center;
   margin-bottom: 25px;
 }
@@ -663,7 +707,7 @@ header img {
   top: 15px;
   left: 15px;
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-align: center;
 }
 .participe .etape:nth-child(2) .card {
@@ -680,7 +724,7 @@ header img {
   top: 15px;
   left: 15px;
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-align: center;
 }
 .participe .etape:nth-child(4) .card {
@@ -697,7 +741,7 @@ header img {
   top: 15px;
   left: 15px;
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-align: center;
 }
 .participe .etape:nth-child(5) .card {
@@ -714,7 +758,7 @@ header img {
   top: 15px;
   left: 15px;
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-align: center;
 }
 .participe .etape:nth-child(6) .card {
@@ -731,7 +775,7 @@ header img {
   top: 15px;
   left: 15px;
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   text-align: center;
 }
 .participe .etape .containerImg {
@@ -1171,6 +1215,27 @@ footer {
   background-color: #192136;
   color: white;
   padding: 50px;
+  display: flex;
+  gap: 10%;
+  flex-wrap: wrap;
+}
+footer h3 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+footer nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+footer nav a {
+  font-size: 1.7rem;
+  color: white;
+}
+footer .logo a {
+  font-size: 2.8rem;
+  text-align: center;
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
