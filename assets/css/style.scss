@@ -237,6 +237,7 @@ header{
   .vision{
     display: grid;
     grid-template: 1fr 3fr 1fr / 2fr repeat(5, 1fr);
+    background-color: #b6aaff;
 
     @media screen and (max-width: 992px) {
       display: flex;
