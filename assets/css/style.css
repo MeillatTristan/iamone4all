@@ -641,9 +641,9 @@ header .owl-carousel.header {
   justify-content: center;
 }
 .hero .containerFirstBlock .containerText p {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
-  background-color: rgba(25, 33, 54, 0.431372549);
+  background-color: rgba(25, 33, 54, 0.6980392157);
   padding: 30px;
   border-radius: 5px;
   color: white;
