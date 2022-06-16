@@ -145,7 +145,7 @@ header{
     }
 
     img{
-      height: 80px;
+      height: 100px;
       width: auto;
       border-radius: 5px;
       min-width: 0;
@@ -169,6 +169,16 @@ header{
         padding: 15px;
         margin: 5px 0;
       }
+
+      &::before{
+        content:'';
+        height: 100%;
+        width: 1px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: #dadada;
+      }
       
       &::after{
         content: '';
@@ -188,6 +198,7 @@ header{
           transform: none;
         }
       }
+
 
       &:hover::after{
         transform: scaleX(1);
