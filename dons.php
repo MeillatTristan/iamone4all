@@ -33,12 +33,12 @@
       <img src="assets/img/Répartition Ukraine.png" alt="Image">
     </div>
     <div class="containerDon">
-      <form action="/create-checkout-session.php" method="POST">
+      <form action="create-checkout-session.php" method="post">
         <div class="product">
           <img src="https://i.imgur.com/EHyR2nP.png" alt="The cover of Stubborn Attachments" />
           <div class="description">
             <h3>Stubborn Attachments</h3>
-            <input type="number">
+            <input type="number" name="price">
           </div>
         </div>
         <button type="submit" id="checkout-button">Checkout</button>
