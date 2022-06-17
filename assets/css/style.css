@@ -1358,6 +1358,9 @@ header .owl-carousel.header .item a.btnSecondary {
     width: 80%;
   }
 }
+.reseau .containerCarou .btnPrimary {
+  margin-top: 25px;
+}
 .reseau .containerCarou .random {
   width: 80%;
 }
@@ -1372,6 +1375,8 @@ header .owl-carousel.header .item a.btnSecondary {
   padding: 0 50px;
   background-image: url(../img/news/Antennes\ Seti\ filig.jpg);
   background-size: cover;
+  margin-top: 100px;
+  padding-bottom: 50px;
 }
 @media screen and (max-width: 500px) {
   .actualite {
@@ -1381,9 +1386,14 @@ header .owl-carousel.header .item a.btnSecondary {
     margin-left: 20px;
   }
 }
-.actualite .title {
+.actualite .containerImg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.actualite .containerImg .title {
   min-width: 300px;
-  width: 50%;
+  width: 30%;
   margin-top: 50px;
 }
 .actualite .containerCarou {
@@ -1434,15 +1444,20 @@ header .owl-carousel.header .item a.btnSecondary {
   margin-top: 100px;
 }
 .events .containerText {
-  padding: 100px 0 0 100px;
+  padding: 50px 0 0 100px;
   width: 100%;
   min-height: 80vh;
   position: relative;
+  z-index: 4;
   background: linear-gradient(to right bottom, #b6aaff 0%, #d3cbfd 10%, #eeeeee 100%);
 }
 .events .containerText .containerTitle {
-  width: 50%;
-  min-width: 320px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.events .containerText .containerTitle img {
+  width: 40%;
 }
 .events .containerText span {
   color: #6a55ea;
@@ -1451,35 +1466,44 @@ header .owl-carousel.header .item a.btnSecondary {
   font-size: 1.6rem;
 }
 .events .containerText h2 {
-  font-size: 70px;
+  font-size: 60px;
   color: black;
-  width: 80%;
   text-align: left;
 }
 .events .containerText h2::after {
   display: none;
 }
+.events .containerText p {
+  width: 100%;
+  text-align: center;
+}
 .events .containerText .containerIllustration2 {
-  width: 60%;
+  width: 100%;
   margin-top: 50px;
   z-index: 2;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .events .containerText .containerIllustration2 img {
-  width: 100%;
+  width: 60%;
   height: auto;
 }
 .events .containerText .shape {
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
   z-index: 0;
-  width: auto;
+  width: 50%;
+  z-index: 1;
 }
 .events .containerText .containerButton {
   padding-top: 50px;
   padding-bottom: 50px;
   height: max-content;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .events .containerIllustration {
   width: 35%;

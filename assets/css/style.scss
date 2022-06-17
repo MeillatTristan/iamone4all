@@ -1484,6 +1484,10 @@ header{
       }
     }
 
+    .btnPrimary{
+      margin-top: 25px;
+    }
+
     .random{
       width: 80%;
   
@@ -1507,6 +1511,8 @@ header{
   padding: 0 50px;
   background-image: url(../img/news/Antennes\ Seti\ filig.jpg);
   background-size: cover;
+  margin-top: 100px;
+  padding-bottom: 50px;
 
   @media screen and (max-width: 500px) {
     padding: 0;
@@ -1516,10 +1522,16 @@ header{
     }
   }
 
-  .title{
-    min-width: 300px;
-    width: 50%;
-    margin-top: 50px;
+  .containerImg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    .title{
+      min-width: 300px;
+      width: 30%;
+      margin-top: 50px;
+    }
   }
   
   .containerCarou{
@@ -1586,15 +1598,22 @@ header{
   margin-top: 100px;
 
   .containerText{
-    padding: 100px 0 0 100px;
+    padding: 50px 0 0 100px;
     width: 100%;
     min-height: 80vh;
     position: relative;
+    z-index: 4;
     background: linear-gradient(to right bottom, #b6aaff 0%,#d3cbfd 10%, #eeeeee 100%);
+    
 
     .containerTitle{
-      width: 50%;
-      min-width: 320px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      img{
+        width: 40%;
+      }
     }
 
     span{
@@ -1605,9 +1624,8 @@ header{
     }
 
     h2{
-      font-size: 70px;
+      font-size: 60px;
       color: black;
-      width: 80%;
       text-align: left;
 
       &::after{
@@ -1615,30 +1633,41 @@ header{
       }
     }
 
+    p{
+      width: 100%;
+      text-align: center;
+    }
+
     .containerIllustration2{
-      width: 60%;
+      width: 100%;
       margin-top: 50px;
       z-index: 2;
       position: relative;
+      display: flex;
+      justify-content: center;
 
       img{
-        width: 100%;
+        width: 60%;
         height: auto;
       }
     }
 
     .shape{
       position: absolute;
-      bottom: 0;
+      top: 0;
       right: 0;
       z-index: 0;
-      width: auto;
+      width: 50%;
+      z-index: 1;
     }
 
     .containerButton{
       padding-top: 50px;
       padding-bottom: 50px;
       height: max-content;
+      width: 100%;
+      display: flex;
+      justify-content: center;
     }
   }
 
