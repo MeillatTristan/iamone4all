@@ -901,6 +901,9 @@ header .owl-carousel.header .item a.btnSecondary {
     flex-direction: column;
   }
 }
+.participe .etape .spiderman {
+  width: 80% !important;
+}
 .participe .etape .textPopup {
   display: none;
 }
@@ -949,6 +952,13 @@ header .owl-carousel.header .item a.btnSecondary {
   color: white;
   font-size: 2.2rem;
   text-align: center;
+}
+.participe .etape:nth-child(2) .card .operation {
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  display: block;
+  margin-bottom: -20px;
 }
 .participe .etape:nth-child(5) .card {
   background-color: #b0d4ee !important;
@@ -1039,6 +1049,7 @@ header .owl-carousel.header .item a.btnSecondary {
   line-height: 1.7;
   font-size: 1.8rem;
   margin-bottom: 30px;
+  text-align: center;
 }
 .participe .etape .card .logo {
   width: 100%;
