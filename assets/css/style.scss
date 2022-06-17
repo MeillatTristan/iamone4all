@@ -244,7 +244,7 @@ header{
     justify-content: center;
     align-items: center;
     gap: 10%;
-    margin-top: 40px;
+    margin-top: 75px !important;
 
     @media screen and (max-width: 992px) {
       flex-direction: column;
@@ -281,6 +281,18 @@ header{
 
       img{
         width: 20%;
+
+        &.vip{
+          width: 30%;
+        }
+      }
+
+      p{
+        text-align: center;
+      }
+
+      .btnPrimary{
+        margin-top: 30px;
       }
     }
 

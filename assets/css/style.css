@@ -229,7 +229,7 @@ header .owl-carousel.header .item a.btnSecondary {
   justify-content: center;
   align-items: center;
   gap: 10%;
-  margin-top: 40px;
+  margin-top: 75px !important;
 }
 @media screen and (max-width: 992px) {
   .present .block {
@@ -263,6 +263,15 @@ header .owl-carousel.header .item a.btnSecondary {
 }
 .present .block:nth-child(3) img {
   width: 20%;
+}
+.present .block:nth-child(3) img.vip {
+  width: 30%;
+}
+.present .block:nth-child(3) p {
+  text-align: center;
+}
+.present .block:nth-child(3) .btnPrimary {
+  margin-top: 30px;
 }
 .present .block img {
   width: 30%;
