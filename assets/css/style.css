@@ -882,6 +882,7 @@ header .owl-carousel.header .item a.btnSecondary {
   font-size: 3.5rem;
   color: #65BF3B;
   margin-right: 20px;
+  margin-left: 20px;
 }
 .participe h3 {
   font-size: 3rem;
@@ -1092,6 +1093,7 @@ header .owl-carousel.header .item a.btnSecondary {
   margin-top: 15px;
   font-size: 1.8rem;
   color: white;
+  text-align: center;
 }
 .participe .containerBand .band p strong {
   color: #FCC61F;
