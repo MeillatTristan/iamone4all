@@ -99,6 +99,22 @@ strong.one4all{
   color: $primary-color;
 }
 
+.btnSecondary{
+  background-color: $seconday-color;
+  color: white;
+  border-radius: 15px;
+  padding: 18px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border: solid 4px $seconday-color;
+  transition: 0.3s;
+}
+
+.btnSecondary:hover{
+  background-color: white;
+  color: $seconday-color;
+}
+
 .secondaryColor{
   color: $seconday-color;
 }
@@ -208,7 +224,14 @@ header{
       a{
         position: absolute;
         bottom: 50px;
-        right: 50px;
+        right: 50%;
+        transform: translateX(50%);
+        
+        &.btnSecondary{
+          left: 50px;
+          right: auto;
+          transform: translateX(100%);
+        }
       }
     }
   }

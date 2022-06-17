@@ -91,6 +91,22 @@ strong.one4all {
   color: #3E4FE4;
 }
 
+.btnSecondary {
+  background-color: #FCC61F;
+  color: white;
+  border-radius: 15px;
+  padding: 18px;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  border: solid 4px #FCC61F;
+  transition: 0.3s;
+}
+
+.btnSecondary:hover {
+  background-color: white;
+  color: #FCC61F;
+}
+
 .secondaryColor {
   color: #FCC61F;
 }
@@ -199,7 +215,13 @@ header .owl-carousel.header .item {
 header .owl-carousel.header .item a {
   position: absolute;
   bottom: 50px;
-  right: 50px;
+  right: 50%;
+  transform: translateX(50%);
+}
+header .owl-carousel.header .item a.btnSecondary {
+  left: 50px;
+  right: auto;
+  transform: translateX(100%);
 }
 
 .present .block {
