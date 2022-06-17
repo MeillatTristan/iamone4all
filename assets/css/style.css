@@ -426,6 +426,11 @@ header .owl-carousel.header {
     width: 80%;
   }
 }
+.challenge p.big {
+  font-size: 2.3rem;
+  margin-top: 5px;
+  font-weight: 600;
+}
 
 .ctaOne {
   margin-top: 75px;
