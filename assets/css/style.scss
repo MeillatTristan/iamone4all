@@ -967,25 +967,28 @@ header{
       flex-direction: column;
     }
 
-    .containerPopup{
-      cursor: pointer;
-      margin-bottom: -20%;
-
-      i{
-        font-size: 2.5rem;
-        color: $primary-color;
-      }
-      
-
-      .popup{
-        opacity: 0;
-        transition: 0.3s;
-      }
-
-      &:hover,
-      &:active{
+    .textPopup{
+      display: none;
+      .containerPopup{
+        cursor: pointer;
+        margin-bottom: -20%;
+  
+        i{
+          font-size: 2.5rem;
+          color: $primary-color;
+        }
+        
+  
         .popup{
-          opacity: 1;
+          opacity: 0;
+          transition: 0.3s;
+        }
+  
+        &:hover,
+        &:active{
+          .popup{
+            opacity: 1;
+          }
         }
       }
     }

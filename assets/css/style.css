@@ -888,19 +888,22 @@ header .owl-carousel.header .item a.btnSecondary {
     flex-direction: column;
   }
 }
-.participe .etape .containerPopup {
+.participe .etape .textPopup {
+  display: none;
+}
+.participe .etape .textPopup .containerPopup {
   cursor: pointer;
   margin-bottom: -20%;
 }
-.participe .etape .containerPopup i {
+.participe .etape .textPopup .containerPopup i {
   font-size: 2.5rem;
   color: #3E4FE4;
 }
-.participe .etape .containerPopup .popup {
+.participe .etape .textPopup .containerPopup .popup {
   opacity: 0;
   transition: 0.3s;
 }
-.participe .etape .containerPopup:hover .popup, .participe .etape .containerPopup:active .popup {
+.participe .etape .textPopup .containerPopup:hover .popup, .participe .etape .textPopup .containerPopup:active .popup {
   opacity: 1;
 }
 .participe .etape:nth-child(1) .card::after {
