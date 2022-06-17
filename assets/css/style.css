@@ -884,6 +884,18 @@ header .owl-carousel.header .item a.btnSecondary {
     flex-direction: column;
   }
 }
+.participe .etape .containerPopup {
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: -20%;
+}
+.participe .etape .containerPopup .popup {
+  opacity: 0;
+  transition: 0.3s;
+}
+.participe .etape .containerPopup:hover .popup, .participe .etape .containerPopup:active .popup {
+  opacity: 1;
+}
 .participe .etape:nth-child(1) .card::after {
   content: "1";
   position: absolute;

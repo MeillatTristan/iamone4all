@@ -963,6 +963,25 @@ header{
       flex-direction: column;
     }
 
+    .containerPopup{
+      cursor: pointer;
+      margin-top: 10px;
+      margin-bottom: -20%;
+      
+
+      .popup{
+        opacity: 0;
+        transition: 0.3s;
+      }
+
+      &:hover,
+      &:active{
+        .popup{
+          opacity: 1;
+        }
+      }
+    }
+
     &:nth-child(1) .card{
       &::after{
         content:"1";
