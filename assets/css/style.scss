@@ -340,6 +340,11 @@ header{
         margin-bottom: 25px;
         line-height: 35px;
         text-align: center;
+
+        &.consequence{
+          font-size: 2.3rem;
+          margin-top: 75px;
+        }
       }
 
       .containerBtn{
@@ -529,6 +534,7 @@ header{
       font-size: 3.2rem;
       margin-top: 20px;
       font-weight: 600;
+      text-align: center;
     }
   }
 }

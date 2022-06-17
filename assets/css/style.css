@@ -317,6 +317,10 @@ header .owl-carousel.header .item a.btnSecondary {
   line-height: 35px;
   text-align: center;
 }
+.present .block .containerText p.consequence {
+  font-size: 2.3rem;
+  margin-top: 75px;
+}
 .present .block .containerText .containerBtn {
   width: 100%;
   display: flex;
@@ -489,6 +493,7 @@ header .owl-carousel.header .item a.btnSecondary {
   font-size: 3.2rem;
   margin-top: 20px;
   font-weight: 600;
+  text-align: center;
 }
 
 .ctaOne {
