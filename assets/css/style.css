@@ -237,6 +237,9 @@ header .owl-carousel.header .item a.btnSecondary {
     margin-top: 75px;
   }
 }
+.present .block .illu {
+  width: 35%;
+}
 .present .block:nth-child(2) {
   background-color: #3E4FE4;
   color: white;
@@ -309,6 +312,7 @@ header .owl-carousel.header .item a.btnSecondary {
   font-size: 2rem;
   margin-bottom: 25px;
   line-height: 35px;
+  text-align: center;
 }
 .present .block .containerText .containerBtn {
   width: 100%;
@@ -452,8 +456,9 @@ header .owl-carousel.header .item a.btnSecondary {
 .challenge h1 {
   width: max-content;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 75px;
   position: relative;
+  margin-top: 50px;
 }
 .challenge h1::after {
   content: "";
@@ -467,15 +472,18 @@ header .owl-carousel.header .item a.btnSecondary {
 .challenge p {
   width: 40%;
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 @media screen and (max-width: 700px) {
   .challenge p {
     width: 80%;
   }
 }
+.challenge p strong {
+  font-size: 3rem;
+}
 .challenge p.big {
-  font-size: 2.3rem;
+  font-size: 3.2rem;
   margin-top: 20px;
   font-weight: 600;
 }
