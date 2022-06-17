@@ -1384,6 +1384,8 @@ header{
 
 .actualite{
   padding: 0 50px;
+  background-image: url(../img/news/Antennes\ Seti\ filig.jpg);
+  background-size: cover;
 
   @media screen and (max-width: 500px) {
     padding: 0;
@@ -1417,9 +1419,10 @@ header{
         padding: 7px;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         transition: 0.3s;
+        background-color: white;
         
         &:hover{
-          background-color: $primary-color-50;
+          background-color: #8894ff;
           color: white;
         }
 

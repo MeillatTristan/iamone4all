@@ -1271,6 +1271,8 @@ header .owl-carousel.header .item a.btnSecondary {
 
 .actualite {
   padding: 0 50px;
+  background-image: url(../img/news/Antennes\ Seti\ filig.jpg);
+  background-size: cover;
 }
 @media screen and (max-width: 500px) {
   .actualite {
@@ -1302,9 +1304,10 @@ header .owl-carousel.header .item a.btnSecondary {
   padding: 7px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   transition: 0.3s;
+  background-color: white;
 }
 .actualite .containerCarou .actu .card:hover {
-  background-color: rgba(62, 79, 228, 0.662745098);
+  background-color: #8894ff;
   color: white;
 }
 .actualite .containerCarou .actu .card .containerImg {
