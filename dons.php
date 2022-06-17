@@ -16,16 +16,16 @@
 
 <body>
   <header>
-    <nav>
-      <a href="#presentation">Présentation</a>
-      <a href="#vision">#One4All Vision</a>
-      <a href="#objectif">Objectif</a>
-      <a href="#hero">Ligue des héros altruistes</a>
-      <img class="logo" src="assets/img/logo.jpg" alt="">
-      <a href="#etape">Participer</a>
-      <a href="#commu">Communauté</a>
-      <a href="#actu">Actualités</a>
-      <a href="#events">Evénements</a>
+  <nav>
+      <a href="index.html#presentation">Présentation</a>
+      <a href="index.html#vision">Road-Trip #One4All</a>
+      <a href="index.html#objectif">Objectif <br> 100M€</a>
+      <a href="index.html#hero">Ligue des Héros Altruistes</a>
+      <a href="index.html"><img class="logo" src="assets/img/etapes/spiderman.png" alt=""></a>
+      <a href="index.html#etape">Participer <i class="fa-solid fa-heart"></i></a>
+      <a href="index.html#commu">Communauté #One4All</a>
+      <a href="index.html#actu">Actualités</a>
+      <a href="index.html#events">Evénements</a>
     </nav>
   </header>
   <section class="don">
@@ -34,14 +34,13 @@
     </div>
     <div class="containerDon">
       <form action="create-checkout-session.php" method="post">
+        <span class="success"> Merci pour votre don, nous l'avons bien reçu !</span>
         <div class="product">
-          <img src="https://i.imgur.com/EHyR2nP.png" alt="The cover of Stubborn Attachments" />
           <div class="description">
-            <h3>Stubborn Attachments</h3>
-            <input type="number" name="price">
+            <h2>Nous soutenir</h2>
           </div>
         </div>
-        <button type="submit" id="checkout-button">Checkout</button>
+        <button class="btnPrimary" type="submit" id="checkout-button">Je fais un don</button>
       </form>
     </div>
   </section>

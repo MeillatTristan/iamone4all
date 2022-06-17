@@ -209,7 +209,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15%;
+    gap: 10%;
     margin-top: 40px;
 
     @media screen and (max-width: 992px) {
@@ -223,6 +223,7 @@ header{
       padding: 50px 20px;
       border-radius: 20px;
       margin: 0 50px;
+      margin-top: 20px;
 
       .btnPrimary{
         background-color: white;
@@ -233,6 +234,15 @@ header{
           color: white;
           border-color: white;
         }
+      }
+    }
+
+    &:nth-child(3){
+      justify-content: space-around;
+      gap: 0;
+
+      img{
+        width: 20%;
       }
     }
 
@@ -261,7 +271,7 @@ header{
       }
 
       p{
-        font-size: 1.9rem;
+        font-size: 2rem;
         margin-bottom: 25px;
         line-height: 35px;
       }
@@ -277,8 +287,9 @@ header{
   .vision{
     display: grid;
     grid-template: 1fr 3fr 1fr / 2fr repeat(3, 1fr) 2fr;
-    background-color: #b6aaff;
+    background-color: #009dd2;
     padding: 25px 0;
+    position: relative;
 
     @media screen and (max-width: 992px) {
       display: flex;
@@ -286,6 +297,14 @@ header{
       margin-top: 75px;
       align-items: center;
       padding: 10%;
+    }
+
+    .absolute{
+      position: absolute;
+      width: 50%;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
     }
 
     img.logo{
@@ -317,6 +336,8 @@ header{
       flex-direction: column;
       justify-content: space-around;
       padding: 20px;
+      position: relative;
+      z-index: 1;
 
       @media screen and (max-width: 992px) {
         width: 100%;
@@ -328,10 +349,17 @@ header{
         height: 70%;
         display: flex;
         justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
 
         img{
-          height: 100%;
-          width: auto;
+          width: 60%;
+          min-width: 200px;
+
+          &.road{
+            margin-top: -20%;
+          }
         }
       }
 
@@ -339,7 +367,8 @@ header{
         height: 20%;
         text-align: center;
         font-weight: 600;
-        font-size: 1.7rem;
+        font-size: 1.8rem;
+        color: white;
       }
 
     }
@@ -349,10 +378,23 @@ header{
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
+      z-index: 1;
 
       @media screen and (max-width: 992px) {
         width: 100%;
         margin-top: 30px; 
+      }
+
+      .btnPrimary{
+        background-color: $seconday-color;
+        border-color: $seconday-color;
+        font-weight: 600;
+
+        &:hover{
+          background: white;
+          color: $seconday-color;
+        }
       }
     }
 
@@ -403,6 +445,7 @@ header{
   p{
     width: 40%;
     text-align: center;
+    font-size: 2rem;
 
     @media screen and (max-width: 700px) {
       width: 80%; 
@@ -576,6 +619,7 @@ header{
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
+    align-items: center;
 
     @media screen and (max-width: 800px) {
       flex-direction: column;
@@ -617,6 +661,10 @@ header{
         margin-top: 50px;
       }
 
+      img{
+        width: 80%;
+      }
+
       .band{
         height: 250px;
         width: 100%;
@@ -650,13 +698,13 @@ header{
 }
 
 .hero{
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url(../img/backgroundVision.jpg);
-  background-size: cover;
+  background: url(../img//heros/wonder-ligue-fond3.jpg);
+  background-size: contain;
   padding-bottom: 30px;
+  padding-top: 15px;
 
   .containerImg{
     width: 100%;
@@ -784,6 +832,28 @@ header{
     } 
   }
 
+  .containerTitle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 75px 0;
+    
+    span{
+      background-color: #cdffa9;
+      padding: 25px 75px;
+      font-size: 2.5rem;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+
+      i{
+        font-size: 3.5rem;
+        color: #65BF3B;
+        margin-right: 20px;
+      }
+    }
+  }
+
   h3{
     font-size: 3rem;
     color: $seconday-color;
@@ -794,7 +864,7 @@ header{
   .etape{
     display: flex;
     justify-content: center;
-    gap: 15%;
+    gap: 8%;
     align-items: center;
     margin-top: 50px;
     
@@ -838,7 +908,7 @@ header{
       }
     }
 
-    &:nth-child(4) .card{
+    &:nth-child(5) .card{
       background-color: #b0d4ee !important;
 
       &::after{
@@ -857,7 +927,7 @@ header{
       }
     }
 
-    &:nth-child(5) .card{
+    &:nth-child(6) .card{
       background-color: #b0d4ee !important;
 
       &::after{
@@ -876,7 +946,7 @@ header{
       }
     }
 
-    &:nth-child(6) .card{
+    &:nth-child(7) .card{
       background-color: #b0d4ee !important;
 
       &::after{
@@ -934,6 +1004,29 @@ header{
         line-height: 1.7;
         font-size: 1.8rem;
         margin-bottom: 30px;
+      }
+
+      .logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        a{
+          font-size: 6rem;
+          color: $primary-color;
+          width: 80px;
+          height: 80px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 100%;
+          transition: 0.3s;
+
+          &:hover{
+            color: $seconday-color;
+            background-color: $primary-color;
+          }
+        }
       }
     }
   }
@@ -1258,6 +1351,12 @@ header{
       margin-left: 20px;
     }
   }
+
+  .title{
+    min-width: 300px;
+    width: 50%;
+    margin-top: 50px;
+  }
   
   .containerCarou{
     width: 100%;
@@ -1323,10 +1422,15 @@ header{
 
   .containerText{
     padding: 100px 0 0 100px;
-    width: 70%;
+    width: 100%;
     min-height: 80vh;
     position: relative;
     background: linear-gradient(to right bottom, #b6aaff 0%,#d3cbfd 10%, #eeeeee 100%);
+
+    .containerTitle{
+      width: 50%;
+      min-width: 320px;
+    }
 
     span{
       color: #6a55ea;
@@ -1422,6 +1526,45 @@ footer{
       font-size: 2.8rem;
       text-align: center;
       margin-top: 10px;
+    }
+  }
+}
+
+.don{
+  display: flex;
+
+  .containerImg{
+    width: 60%;
+  }
+
+  .containerDon{
+    width: 35%;
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+
+    form{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+
+      span{
+        background-color: #cdffa9;
+        padding: 25px 75px;
+        font-size: 2.5rem;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+  
+        i{
+          font-size: 3.5rem;
+          color: #65BF3B;
+          margin-right: 20px;
+        }
+
+      button{
+        cursor: pointer;
+      }
     }
   }
 }
