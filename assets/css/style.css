@@ -193,6 +193,14 @@ header .owl-carousel.header {
   width: 100%;
   padding: 0 50px 50px 50px;
 }
+header .owl-carousel.header .item {
+  position: relative;
+}
+header .owl-carousel.header .item a {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+}
 
 .present .block {
   display: flex;
