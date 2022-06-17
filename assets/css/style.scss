@@ -43,6 +43,10 @@ h1{
   }
 }
 
+.underline{
+  text-decoration: underline;
+}
+
 .containerTitle{
   width: 100%;
   display: flex;
@@ -965,8 +969,12 @@ header{
 
     .containerPopup{
       cursor: pointer;
-      margin-top: 10px;
       margin-bottom: -20%;
+
+      i{
+        font-size: 2.5rem;
+        color: $primary-color;
+      }
       
 
       .popup{
