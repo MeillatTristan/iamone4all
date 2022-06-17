@@ -221,7 +221,7 @@ header .owl-carousel.header .item a {
 header .owl-carousel.header .item a.btnSecondary {
   left: 50px;
   right: auto;
-  transform: translateX(100%);
+  transform: translateX(150%);
 }
 
 .present .block {
