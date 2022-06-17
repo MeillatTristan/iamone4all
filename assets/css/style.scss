@@ -704,7 +704,6 @@ header{
     width: 100%;
     display: flex;
     justify-content: space-around;
-    margin-top: 40px;
     align-items: center;
 
     @media screen and (max-width: 800px) {
@@ -748,7 +747,7 @@ header{
       }
 
       img{
-        width: 80%;
+        width: 100%;
       }
 
       .band{
