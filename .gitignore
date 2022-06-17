@@ -22,7 +22,6 @@ yarn-error.log
 ###< lexik/jwt-authentication-bundle ###
 /upload/*/*
 /upload/
-/assets/
 
 /templates/client/*
 /public/assets_client/*
