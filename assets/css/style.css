@@ -240,6 +240,9 @@ header .owl-carousel.header .item a.btnSecondary {
 .present .block .illu {
   width: 35%;
 }
+.present .block.first {
+  margin-top: 50px !important;
+}
 .present .block:nth-child(2) {
   background-color: #3E4FE4;
   color: white;
@@ -472,7 +475,7 @@ header .owl-carousel.header .item a.btnSecondary {
 .challenge p {
   width: 45%;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 @media screen and (max-width: 700px) {
   .challenge p {
@@ -480,7 +483,7 @@ header .owl-carousel.header .item a.btnSecondary {
   }
 }
 .challenge p strong {
-  font-size: 3rem;
+  font-size: 2.7rem;
 }
 .challenge p.big {
   font-size: 3.2rem;
