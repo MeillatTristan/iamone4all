@@ -264,6 +264,11 @@ header .owl-carousel.header .item a.btnSecondary {
 .present .block img {
   width: 30%;
 }
+.present .block img.ukraine {
+  width: 20%;
+  border: #192136 solid 5px;
+  border-radius: 5px;
+}
 @media screen and (max-width: 992px) {
   .present .block img {
     width: 80%;
