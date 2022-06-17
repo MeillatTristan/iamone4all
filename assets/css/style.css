@@ -286,8 +286,8 @@ header .owl-carousel.header {
 }
 .present .vision .absolute {
   position: absolute;
-  width: 50%;
-  right: 0;
+  width: 40%;
+  right: -100px;
   bottom: 0;
   z-index: 0;
 }
