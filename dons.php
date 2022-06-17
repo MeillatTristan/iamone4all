@@ -34,7 +34,7 @@
     </div>
     <div class="containerDon">
       <form action="create-checkout-session.php" method="post">
-        <span class="success"> Merci pour votre don, nous l'avons bien reçu !</span>
+        <span class="success"><i class="fa-solid fa-circle-check"></i> Merci pour votre don, nous l'avons bien reçu !</span>
         <div class="product">
           <div class="description">
             <h2>Nous soutenir</h2>
