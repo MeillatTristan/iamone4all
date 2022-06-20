@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="assets/css/owl/owl.theme.default.min.css">
   <script src="https://polyfill.io/v3/polyfill.min.js?version=3.52.1&features=fetch"></script>
   <script src="https://js.stripe.com/v3/"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>IamOne4All</title>
 </head>
 
@@ -28,19 +28,37 @@
       <a href="index.html#events">Evénements</a>
     </nav>
   </header>
+  <h1 class="titleDons">Comment est utilisé votre don ?</h1>
   <section class="don">
     <div class="containerImg">
       <img src="assets/img/Répartition Ukraine.png" alt="Image">
     </div>
     <div class="containerDon">
       <form action="create-checkout-session.php" method="post">
-        <span class="success"><i class="fa-solid fa-circle-check"></i> Merci pour votre don, nous l'avons bien reçu !</span>
+        <?php
+          if (isset($_REQUEST['success'])) {
+            ?>
+            <span class="success"><i class="fa-solid fa-circle-check"></i> Merci pour votre don, nous l'avons bien reçu !</span>
+            <?php
+          }
+        ?>
         <div class="product">
           <div class="description">
             <h2>Nous soutenir</h2>
           </div>
         </div>
         <button class="btnPrimary" type="submit" id="checkout-button">Je fais un don</button>
+        <div class="containerText">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate vel quas amet iusto recusandae alias tempore repellat eum sapiente vero soluta quis placeat earum inventore provident, porro accusamus, rerum non.</p>
+          <ul>
+            <li>lorem</li>
+            <li>lorem</li>
+            <li>lorem</li>
+            <li>lorem</li>
+            <li>lorem</li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non numquam harum, nisi quam perferendis voluptates accusantium nam exercitationem velit, inventore commodi praesentium itaque maxime. Amet porro fugiat praesentium corporis quibusdam.</p>
+        </div>
       </form>
     </div>
   </section>

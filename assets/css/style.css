@@ -38,6 +38,24 @@ h1 {
   }
 }
 
+#popup-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#popup-info p {
+  width: 40%;
+  min-width: 300px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.titleDons {
+  text-align: center;
+  margin: 25px;
+}
+
 .underline {
   text-decoration: underline;
 }
@@ -963,23 +981,9 @@ header .owl-carousel.header .item a.btnSecondary {
 .participe .etape .spiderman {
   width: 80% !important;
 }
-.participe .etape .textPopup {
-  display: none;
-}
-.participe .etape .textPopup .containerPopup {
-  cursor: pointer;
-  margin-bottom: -20%;
-}
-.participe .etape .textPopup .containerPopup i {
+.participe .etape .open-popup-link {
   font-size: 2.5rem;
   color: #3E4FE4;
-}
-.participe .etape .textPopup .containerPopup .popup {
-  opacity: 0;
-  transition: 0.3s;
-}
-.participe .etape .textPopup .containerPopup:hover .popup, .participe .etape .textPopup .containerPopup:active .popup {
-  opacity: 1;
 }
 .participe .etape:nth-child(1) .card::after {
   content: "1";
@@ -1524,7 +1528,7 @@ header .owl-carousel.header .item a.btnSecondary {
 }
 .events .containerText .shape {
   position: absolute;
-  top: 0;
+  top: 120px;
   right: 0;
   width: 50%;
   z-index: 1;
@@ -1576,6 +1580,8 @@ header .owl-carousel.header .item a.btnSecondary {
 .events .containerText .containerIllustration2 img {
   width: 60%;
   height: auto;
+  border: #192136 solid 5px;
+  border-radius: 5px;
 }
 .events .containerText .containerButton {
   padding-top: 50px;
@@ -1653,17 +1659,17 @@ footer .logo a {
   width: 35%;
   display: flex;
   justify-content: center;
-  margin-top: 200px;
 }
 .don .containerDon form {
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 25px;
 }
 .don .containerDon form span {
   background-color: #cdffa9;
   padding: 25px 75px;
-  font-size: 2.5rem;
+  font-size: 2rem;
   border-radius: 20px;
   display: flex;
   align-items: center;

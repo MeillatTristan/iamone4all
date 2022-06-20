@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/owl/owl.carousel.min.css">
   <link rel="stylesheet" href="assets/css/owl/owl.theme.default.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/popup.css">
+  <script src="assets/js/fontawesome.js"></script>
   <title>IamOne4All</title>
 </head>
 <body>
@@ -32,6 +32,10 @@
       <div class="item">
         <img src="assets/img/Slide-UK2.png" alt="">
         <a href="" class="btnPrimary">Je fais un don</a>
+      </div>
+      <div class="item">
+        <img src="assets/img/Slide-Nos-evenements.jpg" alt="">
+        <a href="" class="btnPrimary">Nos évènements</a>
       </div>
     </div>
     <img src="assets/img/cartouche-oprération-jesuisone4all.png" alt="title">
@@ -184,7 +188,10 @@
         <div class="card">
           <div class="containerText">
             <p><strong>Téléchargez</strong> la pancarte de soutien de l’opération ou <strong>créez</strong> votre propre <span class="underline">pancarte</span>.* </p>
-            <p class="textPopup"><span class="containerPopup"><br> <i class="fa-solid fa-circle-info"></i> <span class="popup">(un dessin personnalisé aux couleurs de <strong class="one4all">#One4all</strong> ainsi que la mention <strong class="one4all">#JeSuisOne4all</strong> sont indispensables)</span></span>.</p>
+            <a class="open-popup-link" href="#popup-info"><i class="fa-solid fa-circle-info"></i></a>
+            <div id="popup-info" class="white-popup mfp-hide">
+              <p>(un dessin personnalisé aux couleurs de <strong class="one4all">#One4all</strong> ainsi que la mention <strong class="one4all">#JeSuisOne4all</strong> sont indispensables)</p>
+            </div>
           </div>
           <a href="assets/img/pdf/pancarteOne4All-A3.pdf" target="_blank" class="btnPrimary">Télécharger</a>
         </div>
@@ -206,7 +213,7 @@
         </div>
       </div>
       <div class="containerTitle">
-        <span><i class="fa-solid fa-circle-check"></i>À ce stade votre challenge est validé <i class="fa-solid fa-thumbs-up"></i> Mais vous pouvez continuer à nous soutenir ... <i class="fa-solid fa-face-smile-beam"></i></span>
+        <span><i class="fa-solid fa-circle-check"></i>À ce stade votre challenge est validé <i class="fa-solid fa-thumbs-up"></i> Mais vous pouvez continuer à nous soutenir ... <i class="fa-solid fa-face-smile-hearts"></i></span>
       </div>
       <div class="etape">
         <div class="containerImg">
@@ -424,6 +431,7 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/popup.js"></script>
   <script src="assets/js/script.js"></script>
 </body>
 </html>

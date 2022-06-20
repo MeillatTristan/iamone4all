@@ -43,6 +43,26 @@ h1{
   }
 }
 
+#popup-info{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p{
+    width: 40%;
+    min-width: 300px;
+    background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+
+  }
+}
+
+.titleDons{
+  text-align: center;
+  margin: 25px;
+}
+
 .underline{
   text-decoration: underline;
 }
@@ -1041,31 +1061,12 @@ header{
       width: 80% !important;
     }
 
-    .textPopup{
-      display: none;
-      .containerPopup{
-        cursor: pointer;
-        margin-bottom: -20%;
-  
-        i{
-          font-size: 2.5rem;
-          color: $primary-color;
-        }
-        
-  
-        .popup{
-          opacity: 0;
-          transition: 0.3s;
-        }
-  
-        &:hover,
-        &:active{
-          .popup{
-            opacity: 1;
-          }
-        }
-      }
+    .open-popup-link{
+      font-size: 2.5rem;
+      color: $primary-color;
     }
+
+    
 
     &:nth-child(1) .card{
       &::after{
@@ -1671,7 +1672,7 @@ header{
     
     .shape{
       position: absolute;
-      top: 0;
+      top: 120px;
       right: 0;
       width: 50%;
       z-index: 1;
@@ -1730,6 +1731,8 @@ header{
       img{
         width: 60%;
         height: auto;
+        border: #192136 solid 5px;
+        border-radius: 5px;
       }
     }
 
@@ -1821,17 +1824,17 @@ footer{
     width: 35%;
     display: flex;
     justify-content: center;
-    margin-top: 200px;
 
     form{
       display: flex;
       align-items: center;
       flex-direction: column;
+      gap: 25px;
 
       span{
         background-color: #cdffa9;
         padding: 25px 75px;
-        font-size: 2.5rem;
+        font-size: 2rem;
         border-radius: 20px;
         display: flex;
         align-items: center;
