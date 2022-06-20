@@ -248,6 +248,11 @@ header .owl-carousel.header .item a.btnSecondary {
   gap: 10%;
   margin-top: 100px !important;
 }
+@supports not (gap: 10%) {
+  .present .block {
+    margin: 5%;
+  }
+}
 @media screen and (max-width: 992px) {
   .present .block {
     flex-direction: column;
@@ -283,6 +288,11 @@ header .owl-carousel.header .item a.btnSecondary {
 .present .block:nth-child(3) {
   justify-content: space-around;
   gap: 0;
+}
+@supports not (gap: 10%) {
+  .present .block:nth-child(3) {
+    margin: 0;
+  }
 }
 .present .block:nth-child(3) img {
   width: 20%;
@@ -677,7 +687,7 @@ header .owl-carousel.header .item a.btnSecondary {
   }
 }
 .objectif .containerMain .containerText {
-  width: 40%;
+  width: 50%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -686,6 +696,15 @@ header .owl-carousel.header .item a.btnSecondary {
   .objectif .containerMain .containerText {
     width: 90%;
   }
+}
+.objectif .containerMain .containerText .containerImg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.objectif .containerMain .containerText .containerImg img {
+  width: 40%;
 }
 .objectif .containerMain .containerText h3 {
   font-size: 3.5rem;
@@ -702,6 +721,11 @@ header .owl-carousel.header .item a.btnSecondary {
   flex-direction: column;
   gap: 30px;
   align-items: center;
+}
+@supports not (gap: 10%) {
+  .objectif .containerMain .containerCta {
+    margin: 15px;
+  }
 }
 @media screen and (max-width: 800px) {
   .objectif .containerMain .containerCta {
@@ -775,6 +799,11 @@ header .owl-carousel.header .item a.btnSecondary {
   gap: 5%;
   margin-top: 100px;
 }
+@supports not (gap: 10%) {
+  .hero .containerFirstBlock {
+    margin: 2.5%;
+  }
+}
 @media screen and (max-width: 992px) {
   .hero .containerFirstBlock {
     flex-direction: column;
@@ -809,11 +838,21 @@ header .owl-carousel.header .item a.btnSecondary {
   justify-content: center;
   gap: 50px;
 }
+@supports not (gap: 10%) {
+  .hero .containerFirstBlock .containerText {
+    margin: 25px;
+  }
+}
 @media screen and (max-width: 992px) {
   .hero .containerFirstBlock .containerText {
     width: 90%;
     margin-top: 50px;
     gap: 25px;
+  }
+  @supports not (gap: 10%) {
+    .hero .containerFirstBlock .containerText {
+      margin: 12px;
+    }
   }
 }
 .hero .containerFirstBlock .containerText .containerBtn {
@@ -896,6 +935,11 @@ header .owl-carousel.header .item a.btnSecondary {
   gap: 8%;
   align-items: center;
   margin-top: 50px;
+}
+@supports not (gap: 10%) {
+  .participe .etape {
+    margin: 4%;
+  }
 }
 @media screen and (max-width: 1200px) {
   .participe .etape {
@@ -1040,6 +1084,11 @@ header .owl-carousel.header .item a.btnSecondary {
   border-radius: 5px;
   position: relative;
 }
+@supports not (gap: 10%) {
+  .participe .etape .card {
+    margin: 12px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .participe .etape .card {
     width: 90%;
@@ -1143,6 +1192,11 @@ header .owl-carousel.header .item a.btnSecondary {
   align-items: center;
   gap: 30px;
   justify-content: space-between;
+}
+@supports not (gap: 10%) {
+  .ctaBand .band .containerCta .cta {
+    margin: 15px;
+  }
 }
 @media screen and (max-width: 992px) {
   .ctaBand .band .containerCta .cta {
@@ -1348,6 +1402,11 @@ header .owl-carousel.header .item a.btnSecondary {
   gap: 30px;
   margin-top: 75px;
 }
+@supports not (gap: 10%) {
+  .reseau .containerCarou {
+    margin: 25px;
+  }
+}
 .reseau .containerCarou h2 {
   margin-bottom: 50px;
   font-size: 2.8rem;
@@ -1447,14 +1506,21 @@ header .owl-carousel.header .item a.btnSecondary {
   padding: 50px 0 0 100px;
   width: 100%;
   min-height: 80vh;
-  position: relative;
-  z-index: 4;
   background: linear-gradient(to right bottom, #b6aaff 0%, #d3cbfd 10%, #eeeeee 100%);
+}
+.events .containerText .shape {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  z-index: 1;
 }
 .events .containerText .containerTitle {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 2;
 }
 .events .containerText .containerTitle img {
   width: 40%;
@@ -1464,11 +1530,15 @@ header .owl-carousel.header .item a.btnSecondary {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.6rem;
+  position: relative;
+  z-index: 2;
 }
 .events .containerText h2 {
   font-size: 60px;
   color: black;
   text-align: left;
+  position: relative;
+  z-index: 2;
 }
 .events .containerText h2::after {
   display: none;
@@ -1476,6 +1546,8 @@ header .owl-carousel.header .item a.btnSecondary {
 .events .containerText p {
   width: 100%;
   text-align: center;
+  position: relative;
+  z-index: 2;
 }
 .events .containerText .containerIllustration2 {
   width: 100%;
@@ -1484,18 +1556,12 @@ header .owl-carousel.header .item a.btnSecondary {
   position: relative;
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 2;
 }
 .events .containerText .containerIllustration2 img {
   width: 60%;
   height: auto;
-}
-.events .containerText .shape {
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 0;
-  width: 50%;
-  z-index: 1;
 }
 .events .containerText .containerButton {
   padding-top: 50px;
@@ -1504,6 +1570,8 @@ header .owl-carousel.header .item a.btnSecondary {
   width: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 2;
 }
 .events .containerIllustration {
   width: 35%;
@@ -1513,6 +1581,8 @@ header .owl-carousel.header .item a.btnSecondary {
   position: absolute;
   bottom: 0;
   right: 0;
+  position: relative;
+  z-index: 2;
 }
 .events .containerIllustration img {
   height: 70vh;
@@ -1530,6 +1600,11 @@ footer {
   gap: 10%;
   flex-wrap: wrap;
 }
+@supports not (gap: 10%) {
+  footer {
+    margin: 5%;
+  }
+}
 footer h3 {
   font-size: 2.5rem;
   margin-bottom: 50px;
@@ -1538,6 +1613,11 @@ footer nav {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+@supports not (gap: 10%) {
+  footer nav {
+    margin: 5px;
+  }
 }
 footer nav a {
   font-size: 1.7rem;

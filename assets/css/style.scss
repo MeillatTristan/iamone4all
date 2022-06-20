@@ -262,6 +262,10 @@ header{
     justify-content: center;
     align-items: center;
     gap: 10%;
+
+    @supports not (gap: 10%) {
+      margin: 5%;
+    }
     margin-top: 100px !important;
     
     @media screen and (max-width: 992px) {
@@ -304,6 +308,10 @@ header{
     &:nth-child(3){
       justify-content: space-around;
       gap: 0;
+
+      @supports not (gap: 10%) {
+        margin: 0;
+      }
 
       img{
         width: 20%;
@@ -727,16 +735,28 @@ header{
       flex-direction: column;
       align-items: center;
     }
-
+    
+    
+    
     .containerText{
-      width: 40%;
+      width: 50%;
       display: flex;
       align-items: center;
       flex-direction: column;
-
-
+      
       @media screen and (max-width: 800px) {
         width: 90%;
+      }
+      
+      .containerImg{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+  
+        img{
+          width: 40%;
+        }
       }
 
       h3{
@@ -756,6 +776,10 @@ header{
       display: flex;
       flex-direction: column;
       gap: 30px;
+
+      @supports not (gap: 10%) {
+        margin: 15px;
+      }
       align-items: center;
 
       @media screen and (max-width: 800px) {
@@ -833,6 +857,10 @@ header{
     justify-content: space-around;
     width: 90%;
     gap: 5%;
+
+    @supports not (gap: 10%) {
+      margin: 2.5%;
+    }
     margin-top:100px;
 
     @media screen and (max-width: 992px) {
@@ -869,10 +897,18 @@ header{
       justify-content: center;
       gap: 50px;
 
+      @supports not (gap: 10%) {
+        margin: 25px;
+      }
+
       @media screen and (max-width: 992px) {
         width: 90%;
         margin-top: 50px;
         gap: 25px;
+
+        @supports not (gap: 10%) {
+          margin: 12px;
+        }
       }
 
       .containerBtn{
@@ -974,6 +1010,10 @@ header{
     display: flex;
     justify-content: center;
     gap: 8%;
+
+    @supports not (gap: 10%) {
+      margin: 4%;
+    }
     align-items: center;
     margin-top: 50px;
     
@@ -1139,6 +1179,9 @@ header{
       flex-direction: column;
       align-items: center;
       gap: 25px;
+      @supports not (gap: 10%) {
+        margin: 12px;
+      }
       border-radius: 5px;
       position: relative;
 
@@ -1253,6 +1296,9 @@ header{
         flex-direction: column;
         align-items: center;
         gap: 30px;
+        @supports not (gap: 10%) {
+          margin: 15px;
+        }
         justify-content: space-between;
 
         @media screen and (max-width: 992px) {
@@ -1472,6 +1518,9 @@ header{
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    @supports not (gap: 10%) {
+      margin: 25px;
+    }
     margin-top: 75px;
 
     h2{
@@ -1597,19 +1646,27 @@ header{
   min-height: 80vh;
   margin-top: 100px;
 
+  
   .containerText{
     padding: 50px 0 0 100px;
     width: 100%;
     min-height: 80vh;
-    position: relative;
-    z-index: 4;
     background: linear-gradient(to right bottom, #b6aaff 0%,#d3cbfd 10%, #eeeeee 100%);
     
+    .shape{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      z-index: 1;
+    }
 
     .containerTitle{
       width: 100%;
       display: flex;
       justify-content: center;
+      position: relative;
+      z-index: 2;
 
       img{
         width: 40%;
@@ -1621,12 +1678,16 @@ header{
       text-transform: uppercase;
       font-weight: 700;
       font-size: 1.6rem;
+      position: relative;
+      z-index: 2;
     }
 
     h2{
       font-size: 60px;
       color: black;
       text-align: left;
+      position: relative;
+      z-index: 2;
 
       &::after{
         display: none;
@@ -1636,6 +1697,8 @@ header{
     p{
       width: 100%;
       text-align: center;
+      position: relative;
+      z-index: 2;
     }
 
     .containerIllustration2{
@@ -1645,6 +1708,8 @@ header{
       position: relative;
       display: flex;
       justify-content: center;
+      position: relative;
+      z-index: 2;
 
       img{
         width: 60%;
@@ -1652,14 +1717,6 @@ header{
       }
     }
 
-    .shape{
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 0;
-      width: 50%;
-      z-index: 1;
-    }
 
     .containerButton{
       padding-top: 50px;
@@ -1668,6 +1725,8 @@ header{
       width: 100%;
       display: flex;
       justify-content: center;
+      position: relative;
+      z-index: 2;
     }
   }
 
@@ -1679,6 +1738,8 @@ header{
     position: absolute;
     bottom: 0;
     right: 0;
+    position: relative;
+      z-index: 2;
 
     img{
       height: 70vh;
@@ -1699,6 +1760,11 @@ footer{
   gap: 10%;
   flex-wrap: wrap;
 
+  @supports not (gap: 10%) {
+    margin: 5%;
+  }
+  
+
   h3{
     font-size: 2.5rem;
     margin-bottom: 50px;
@@ -1708,6 +1774,10 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 10px;
+
+    @supports not (gap: 10%) {
+      margin: 5px;
+    }
 
     a{
       font-size: 1.7rem;
