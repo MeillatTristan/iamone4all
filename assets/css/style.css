@@ -236,9 +236,9 @@ header .owl-carousel.header .item a {
   transform: translateX(50%);
 }
 header .owl-carousel.header .item a.btnSecondary {
-  left: 150px;
+  left: 50px;
   right: auto;
-  transform: translateX(150%);
+  transform: translateX(0);
 }
 
 .present .block {

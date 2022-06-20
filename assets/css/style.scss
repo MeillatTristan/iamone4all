@@ -245,9 +245,9 @@ header{
         transform: translateX(50%);
         
         &.btnSecondary{
-          left: 150px;
+          left: 50px;
           right: auto;
-          transform: translateX(150%);
+          transform: translateX(0);
         }
       }
     }
