@@ -1667,6 +1667,7 @@ footer .logo a {
   border-radius: 20px;
   display: flex;
   align-items: center;
+  margin-bottom: 50px;
 }
 .don .containerDon form span i {
   font-size: 3.5rem;
