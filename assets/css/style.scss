@@ -1210,7 +1210,7 @@ header{
       p{
         line-height: 1.7;
         font-size: 1.8rem;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
         text-align: center;
       }
 
@@ -1349,12 +1349,13 @@ header{
   justify-content: center;
   flex-direction: column;
   padding: 50px 0;
+  position: relative;
 
   #background-video {
     height: 90vh;
     width: 100vw ;
     object-fit: cover;
-    position: fixed;
+    position: absolute;
     left: 0;
     right: 0;
     top: 0;
@@ -1713,7 +1714,7 @@ header{
 
     p{
       width: 100%;
-      text-align: center;
+      text-align: left;
       position: relative;
       z-index: 2;
     }

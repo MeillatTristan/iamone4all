@@ -1116,7 +1116,7 @@ header .owl-carousel.header .item a.btnSecondary {
 .participe .etape .card p {
   line-height: 1.7;
   font-size: 1.8rem;
-  margin-bottom: 30px;
+  margin-bottom: 0px;
   text-align: center;
 }
 .participe .etape .card .logo {
@@ -1241,12 +1241,13 @@ header .owl-carousel.header .item a.btnSecondary {
   justify-content: center;
   flex-direction: column;
   padding: 50px 0;
+  position: relative;
 }
 .reseau #background-video {
   height: 90vh;
   width: 100vw;
   object-fit: cover;
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
@@ -1563,7 +1564,7 @@ header .owl-carousel.header .item a.btnSecondary {
 }
 .events .containerText p {
   width: 100%;
-  text-align: center;
+  text-align: left;
   position: relative;
   z-index: 2;
 }
