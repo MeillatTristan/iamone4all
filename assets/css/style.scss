@@ -58,6 +58,73 @@ h1{
   }
 }
 
+#popup-video{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .mfp-close{
+    font-size: 5rem;
+    color: red;
+    transition: 0.3s;
+  }
+
+  .containerWidth{
+    width: 60%;
+    min-width: 300px;
+
+    .videoContainer {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      
+      iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+      }
+    }
+  }
+}
+
+.titleDons{
+  text-align: center;
+  margin: 25px;
+}
+
+#popup-video-giro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .mfp-close{
+    font-size: 5rem;
+    color: red;
+    transition: 0.3s;
+  }
+
+  .containerWidth{
+    width: 60%;
+    min-width: 300px;
+
+    .videoContainer {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 */
+      height: 0;
+      
+      iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+      }
+    }
+  }
+}
+
 .titleDons{
   text-align: center;
   margin: 25px;
@@ -192,10 +259,49 @@ header{
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    background-color: white;
+    padding-bottom: 10px;
+    
     @media screen and (max-width: 1100px) {
+      transform: translateX(100%);
+      z-index: 2;
+      position: fixed;
       flex-direction: column;
       padding: 0;
+      transition: 0.3s;
+      background-color: white;
+      padding: 0 10%;
+      top: 0;
+      height: 100vh;
+
+      &.active{
+        transform: translateX(0%);
+
+        i#menu{
+          left: 10px;
+        }
+      }
+    }
+
+    i#menu{
+      display: none;
+      cursor: pointer;
+
+      @media screen and (max-width: 1100px) {
+        display: block;
+        position: absolute;
+        left: -50px;
+        top: 50px;
+        font-size: 4rem;
+        z-index: 3;
+      }
+
+      @media screen and (max-width: 700px) {
+        left: -50px;
+      }
     }
 
     img{
@@ -222,14 +328,20 @@ header{
         width: 100%;
         padding: 15px;
         margin: 5px 0;
+        z-index: 2;
+
+        &.lienLogo{
+          display: none;
+        }
       }
       
       &::after{
+        display: none;
         content: '';
         position: absolute;
         width: 100%;
         transform: scaleX(0);
-        height: 3px;
+        height: 5px;
         bottom: -5px;
         left: 0;
         background-color: $primary-color;
@@ -237,7 +349,6 @@ header{
         transition: transform 0.25s ease-out;
 
         @media screen and (max-width: 1100px) {
-          height: 1px;
           top: -5px;
           transform: none;
         }
@@ -254,6 +365,58 @@ header{
   .owl-carousel.header{
     width: 100%;
     padding: 0 50px 50px 50px;
+    position: relative;
+
+    @media screen and (max-width: 1100px) {
+      margin-top: 100px;
+    }
+
+    @media screen and (max-width: 700px) {
+      padding: 0; 
+    }
+
+    span{
+      font-size: 5rem;
+      color: white;
+      background-color: $primary-color;
+      padding: 0 26px 10px 26px;
+      border-radius: 100%;
+      transition: 0.3s;
+
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+
+      &:hover{
+        background-color: white;
+        color: $primary-color;
+      }
+    }
+
+    .owl-prev{
+      position: absolute;
+      left: 50px;
+      top: 45%;
+      transform: translateY(-50%);
+      overflow: visible;
+
+      &:hover{
+        background: transparent;
+      }
+    }
+
+    .owl-next{
+      position: absolute;
+      right: 50px;
+      top: 45%;
+      transform: translateY(-50%);
+      overflow: visible;
+
+      &:hover{
+        background: transparent;
+      }
+    }
+
 
     .item{
       position: relative;
@@ -263,6 +426,10 @@ header{
         bottom: 50px;
         right: 50%;
         transform: translateX(50%);
+
+        @media screen and (max-width: 600px) {
+          display: none;
+        }
         
         &.btnSecondary{
           left: 50px;
@@ -309,6 +476,10 @@ header{
       margin: 0 50px;
       margin-top: 20px;
 
+      @media screen and (max-width: 450px) {
+        margin: 20px 0 0 0;
+      }
+
       p{
         text-align: center;
       }
@@ -336,6 +507,11 @@ header{
       img{
         width: 20%;
 
+        @media screen and (max-width: 992px) {
+          width: 60%;
+          min-width: 300px;
+        }
+
         &.vip{
           width: 35%;
         }
@@ -357,6 +533,11 @@ header{
         width: 25%;
         border: #192136 solid 5px;
         border-radius: 5px;
+
+        @media screen and (max-width: 992px) {
+          width: 60%;
+          min-width: 300px;
+        }
       }
 
       @media screen and (max-width: 992px) {
@@ -526,6 +707,15 @@ header{
         position: relative;
         padding-bottom: 56.25%; /* 16:9 */
         height: 0;
+
+        a.absolute{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+        }
         
         iframe {
             position: absolute;
@@ -805,6 +995,38 @@ header{
         text-align: center;
         font-weight: 600;
       }
+
+      h4{
+        font-size: 3rem;
+        margin-top: 50px;
+      }
+
+      strong{
+        font-weight: 700;
+      }
+
+      a.video{
+        font-size: 3rem;
+        color: white;
+        background-color: red;
+        transition: 0.3s;
+        margin-top: 40px;
+        padding: 15px 35px 15px 40px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 600;
+
+        &:hover{
+          background-color: $primary-color;
+        }
+
+        i{
+          font-size: 4rem;
+          margin-bottom: 10px;
+        }
+      }
     }
 
     .containerCta{
@@ -903,9 +1125,13 @@ header{
       flex-direction: column;
       align-items: center;
     }
+
+    .containerPlaceholder{
+      width: 30%;
+    }
     
     .containerWidth{
-      width: 40%;
+      width: 60%;
 
       @media screen and (max-width: 992px) {
         width: 90%;
@@ -915,6 +1141,15 @@ header{
         position: relative;
         padding-bottom: 56.25%; /* 16:9 */
         height: 0;
+
+        a.absolute{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+        }
         
         iframe {
             position: absolute;
@@ -922,6 +1157,7 @@ header{
             left: 0;
             width: 100%;
             height: 100%;
+            z-index: 0;
         }
       }
     }
@@ -956,7 +1192,7 @@ header{
       p{
         font-size: 2rem;
         text-align: center;
-        background-color: #192136b2;
+        background-color: #192136e1;
         padding: 30px;
         border-radius: 5px;
         color: white;
@@ -968,6 +1204,17 @@ header{
   .vip{
     margin-top: 50px;
     width: 80%;
+
+    img{
+      border: solid 5px white;
+      border-radius: 5px;
+      transition: 0.3s;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+      &:hover{
+        border: solid 5px $primary-color;
+      }
+    }
 
     .owl-dot{
       span{
@@ -993,6 +1240,14 @@ header{
     margin-top: 75px;
     font-size: 2.8rem;
     text-align: left;
+
+    @media screen and (max-width: 665px) {
+      font-size: 3.5vw;
+
+      strong.one4all {
+        font-size: 3.7vw;
+      }
+    }
   }
 }
 
@@ -1036,10 +1291,18 @@ header{
   }
 
   h3{
-    font-size: 3rem;
+    font-size: 2vw;
     color: $seconday-color;
     text-align: center;
     margin-bottom: 25px;
+
+    @media screen and (max-width: 1200px) {
+      font-size: 2.5vw;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 2rem; 
+    }
   }
   
   .etape{
@@ -1212,6 +1475,10 @@ header{
         font-size: 1.8rem;
         margin-bottom: 0px;
         text-align: center;
+
+        .big{
+          font-size: 2.6rem;
+        }
       }
 
       .logo{
@@ -1371,6 +1638,10 @@ header{
     .title{
       height: 150px;
       width: auto;
+
+      @media screen and (max-width: 650px) {
+        height: 100px; 
+      }
     }
   }
 
@@ -1557,6 +1828,17 @@ header{
 
     .random{
       width: 80%;
+
+      img{
+        border: solid 5px white;
+        border-radius: 5px;
+        transition: 0.3s;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        &:hover{
+          border: solid 5px $primary-color;
+        }
+      }
   
       .owl-dot{
         span{
@@ -1670,6 +1952,10 @@ header{
     width: 100%;
     min-height: 80vh;
     background: linear-gradient(to right bottom, #b6aaff 0%,#d3cbfd 10%, #eeeeee 100%);
+
+    @media screen and (max-width: 700px) {
+      padding: 50px 0 0 20px; 
+    }
     
     .shape{
       position: absolute;
@@ -1688,6 +1974,7 @@ header{
 
       img{
         width: 40%;
+        min-width: 320px;
       }
     }
 
@@ -1706,6 +1993,15 @@ header{
       text-align: left;
       position: relative;
       z-index: 2;
+      margin-bottom: 50px;
+
+      @media screen and (max-width: 850px) {
+        font-size: 40px; 
+      }
+      
+      @media screen and (max-width: 530px) {
+        font-size: 20px;
+      }
 
       &::after{
         display: none;
@@ -1713,10 +2009,13 @@ header{
     }
 
     p{
-      width: 100%;
-      text-align: left;
+      width: 40%;
+      text-align: center;
       position: relative;
       z-index: 2;
+      font-size: 2rem;
+      font-weight: 500;
+      margin-top: 20px;
     }
 
     .containerIllustration2{
@@ -1734,6 +2033,10 @@ header{
         height: auto;
         border: #192136 solid 5px;
         border-radius: 5px;
+
+        @media screen and (max-width: 670px) {
+          width: 90%; 
+        }
       }
     }
 

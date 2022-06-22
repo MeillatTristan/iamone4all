@@ -1,6 +1,6 @@
 $('.owl-carousel.vip').owlCarousel({
   loop:true,
-  margin:10,
+  margin:25,
   nav:false,
   autoplay: true,
   responsive:{
@@ -25,7 +25,7 @@ $('.owl-carousel.vip').owlCarousel({
 
 $('.owl-carousel.random').owlCarousel({
     loop:true,
-    margin:10,
+    margin:25,
     autoplay: true,
     autoplayTimeout:3000,
     autoplayHoverPause:true,
@@ -85,7 +85,7 @@ $('.owl-carousel.random').owlCarousel({
     autoplay: true,
     autoplayTimeout:3000,
     autoplayHoverPause:true,
-    nav:false,
+    nav:true,
     dots: false,
     items: 1
   })
@@ -115,3 +115,21 @@ $('.open-popup-link').magnificPopup({
     closeBtnInside:true,
     midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
   });
+
+  $('.open-video-link').magnificPopup({
+    type:'inline',
+    closeBtnInside:true,
+    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+  });
+
+  $('.absolute.giro').magnificPopup({
+    type:'inline',
+    closeBtnInside:true,
+    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+  });
+
+let menu = document.getElementById('menu');
+
+menu.addEventListener("click", function (e){
+  document.getElementById('navHeader').classList.toggle("active");
+})

@@ -13,12 +13,13 @@
 </head>
 <body>
   <header>
-    <nav>
+    <nav id="navHeader">
+      <i id="menu" class="fa-solid fa-bars-sort menu"></i>
       <a href="#presentation">Présentation</a>
       <a href="#vision">Road-Trip #One4All</a>
       <a href="#objectif">Objectif <br> 100M€</a>
       <a href="#hero">Ligue des Héros Altruistes</a>
-      <a href="/"><img class="logo" src="assets/img/etapes/spiderman.png" alt=""></a>
+      <a class="lienLogo" href="/"><img class="logo" src="assets/img/etapes/spiderman.png" alt=""></a>
       <a href="#etape">Participer <i class="fa-solid fa-heart"></i></a>
       <a href="#commu">Communauté #One4All</a>
       <a href="#actu">Actualités</a>
@@ -35,7 +36,7 @@
       </div>
       <div class="item">
         <img src="assets/img/Slide-Nos-evenements.jpg" alt="">
-        <a href="" class="btnPrimary">Nos évènements</a>
+        <a href="" class="btnPrimary">Découvrir nos évènements</a>
       </div>
     </div>
     <img src="assets/img/cartouche-oprération-jesuisone4all.png" alt="title">
@@ -79,6 +80,14 @@
       <img class="logo" src="assets/img/vision/logo.png" alt="Image">
       <div class="containerWidth">
         <div class="video-container">
+          <a href="#popup-video-giro" class="absolute giro"></a>
+          <div id="popup-video-giro" class="white-popup mfp-hide">
+            <div class="containerWidth">
+              <div class="videoContainer">
+                <iframe width="1250" height="703" src="https://www.youtube.com/embed/KQGGCeltG7U" title="The Peace Effort" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/7R0y3vKv034" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
@@ -105,7 +114,7 @@
           <img src="assets/img/objectif/illu.png" alt="">
         </div>
         <h3>Un Événement historique</h3>
-        <p>Assistez au lancement de cet évènement mondial sur les réseaux sociaux le 18 juin 2022 à 12h12</p>
+        <p>Assistez au lancement de cet évènement mondial sur les réseaux sociaux le <strong>18 juin 2022 </strong> à 12h12</p>
         <div class="socialMedia">
           <div class="text">
             <p>Rejoins la commmunauté.</p>
@@ -115,6 +124,15 @@
             <a href="#"><i class="fa-brands fa-facebook"></i></a>
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <h4>Voir la video du lancement : </h4>
+        <a class="video open-video-link" href="#popup-video"><i class="fa-solid fa-play"></i> Play</a>
+        <div id="popup-video" class="white-popup mfp-hide">
+          <div class="containerWidth">
+            <div class="videoContainer">
+              <iframe width="1250" height="703" src="https://www.youtube.com/embed/KQGGCeltG7U" title="The Peace Effort" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -131,7 +149,7 @@
       <img src="assets/img/heros/bouton-ligue.png" alt="">
     </div>
     <div class="containerFirstBlock">
-      <div class="containerText"></div>
+      <div class="containerPlaceholder"></div>
       <div class="containerWidth">
         <div class="video-container">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/7R0y3vKv034" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -198,7 +216,7 @@
       </div>
       <div class="etape">
         <div class="card">
-          <p><strong>Réalisez</strong> une <strong>photo</strong> et/ou <strong>vidéo</strong> originale avec votre pancarte en inscrivant votre <span class="underlineYellow">pseudonyme</span> et votre <span class="underlineYellow">lieu de résidence</span>. <br> <strong class="one4all operation">+</strong> <strong>Postez</strong> votre contenu sur vos réseaux sociaux et <strong>challengez 5 amis </strong> à relever le défi en <strong> 5 jours</strong>. <br> <strong class="one4all operation">=</strong> Vous devenez le capitaine d’une équipe de <strong>5 personnes</strong> sur qui vous devez compter <strong class="one4all">#Jecomptesurtoi</strong>.</p>
+          <p><strong>Réalisez</strong> une <strong>photo</strong> et/ou <strong>vidéo</strong> originale avec votre pancarte en inscrivant votre <span class="underlineYellow">pseudonyme</span> et votre <span class="underlineYellow">lieu de résidence</span>. <br> <strong class="one4all operation">+</strong> <strong>Postez</strong> votre contenu sur vos réseaux sociaux et <strong>challengez 5 amis </strong> à relever le défi en <strong> 5 jours</strong>. <br> <strong class="one4all operation">=</strong> Vous devenez le capitaine d’une équipe de <strong>5 personnes</strong> sur qui vous devez compter <strong class=" big one4all">#Jecomptesurtoi</strong>.</p>
         </div>
         <div class="containerImg">
           <img class="spiderman" src="assets/img/etapes/spiderman.png" alt="">
